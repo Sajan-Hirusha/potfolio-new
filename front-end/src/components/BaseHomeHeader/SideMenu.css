@@ -1,8 +1,0 @@
-/*.sideMenu{*/
-/*    transform: translateX(100%); !* Initially off-screen *!*/
-/*    transition: transform 0.8s ease-in-out; !* Adjusted to open slowly *!*/
-/*}*/
-
-/*.sideMenu.open {*/
-/*    transform: translateX(0); !* Slide-in to the right *!*/
-/*}*/

@@ -1,56 +1,59 @@
-import {useState} from "react";
 import './SideMenu.css'
-const SideMenu = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
+const SideMenu = ({ isSideMenuOpen, toggleSideMenu }) => {
     return (
-        <header className="bg-blue-500 text-white p-4 flex justify-between items-center">
-            {/* Logo */}
-            <div className="text-lg font-bold">MyApp</div>
-
-            {/* Menu Icon */}
-            <button
-                onClick={toggleMenu}
-                className="text-white focus:outline-none sm:hidden"
-                aria-label="Toggle menu"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke="currentColor"
-                    className="w-6 h-6"
+        <div
+            className={` side-menu fixed inset-y-0 right-0 z-10 bg-black bg-opacity-90 w-[400px] ${isSideMenuOpen ? 'open' : ''}`}
+        >
+            <div className="flex justify-start p-4">
+                <button
+                    type="button"
+                    onClick={toggleSideMenu}
+                    className="inline-flex p-2 text-white transition-all duration-200 rounded-md focus:bg-gray-800 hover:bg-gray-800"
                 >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4 6h16M4 12h16m-7 6h7"
-                    />
-                </svg>
-            </button>
-
-            {/* Dropdown Menu */}
-            {isMenuOpen && (
-                <div className="absolute top-16 right-4 bg-white text-black shadow-lg rounded-lg w-48">
-                    <ul>
-                        <li className="border-b p-2 hover:bg-blue-100">
-                            <a href="#">Home</a>
-                        </li>
-                        <li className="border-b p-2 hover:bg-blue-100">
-                            <a href="#">About</a>
-                        </li>
-                        <li className="p-2 hover:bg-blue-100">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            )}
-        </header>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-6 h-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <nav className="flex flex-col items-center mt-10 space-y-4">
+                <a
+                    href="#"
+                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
+                >
+                    Features
+                </a>
+                <a
+                    href="#"
+                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
+                >
+                    Solutions
+                </a>
+                <a
+                    href="#"
+                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
+                >
+                    Resources
+                </a>
+                <a
+                    href="#"
+                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
+                >
+                    Pricing
+                </a>
+            </nav>
+        </div>
     );
 };
 
