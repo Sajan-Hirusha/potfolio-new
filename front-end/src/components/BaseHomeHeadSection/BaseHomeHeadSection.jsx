@@ -7,7 +7,7 @@ import TopSlider from "../BaseHomeSlider/TopSlider.jsx";
 
 const BaseHomeHeadSection =()=>{
     return(
-        <div className="BaseHomeHeadSection grid grid-cols-12 gap-2 bg-[#141414]">
+        <div className="BaseHomeHeadSection grid grid-cols-12 gap-2 bg-[#141414] mt-10">
             <div className="col-span-11  p-4 text-white px-20">
                 <TopSlider/>
             </div>

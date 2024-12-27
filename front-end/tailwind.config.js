@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      letterSpacing: {
+        extra: '0.8em', // Custom letter spacing
+      },
       fontSize: {
         'xxs': '0.625rem',
       },

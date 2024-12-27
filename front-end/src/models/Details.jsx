@@ -1,3 +1,8 @@
+import taildwin from '../assets/images/tailwindCsss.png'
+import mysql from '../assets/images/mySql.png'
+import java from '../assets/images/java.png'
+import node from '../assets/images/node.png'
+
 const Details = {
     name: 'Sabari Holdings',
     email: 'info@sabariholdings.com',
@@ -38,31 +43,27 @@ const Details = {
     ],
     about: [
         {
-            backgroundImage: 'images/AboutImage.jpg',
-            heading: 'About Us',
-            para: ''
-        },
-        {
-            textCardImageUrl: 'images/textCardImage1.jpg',
-            heading: '1. Reliable service',
-            para: `At Sabariholdings.com, we prioritize reliability in every aspect of our operations. From precise order processing to timely delivery, our experienced team ensures a seamless export experience for our customers worldwide.`
-        },
-        {
-            textCardImageUrl: 'images/textCardImage2.jpg',
-            heading: '2. The unique taste of Sri Lanka',
-            para: `Experience the authentic flavors of Sri Lanka with our products. From aromatic cinnamon to refreshing tea, we pride ourselves on delivering the finest tastes straight from Sri Lanka’s lush plantations and spice gardens.`
-        },
-        {
-            textCardImageUrl: 'images/textCardImage3.jpg',
-            heading: '3. Organic ingredients',
-            para: `Sustainability and quality are at the heart of what we do. All our products are sourced from organic farms, ensuring that every package meets international quality standards while preserving the environment for future generations.`
+            title:"Visit My Portfolio And Hire Me",
+            para: "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and developer with 2 years " +
+                "of experience. My main target is to provide a good service to my buyers. Please message me with your requests.",
+
         }
+
+
     ],
-    shop: [
+    skills: [
         {
-            backgroundImage: 'images/shop.jpg',
-            heading: 'Market Place',
-            para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+            coverImageLink:mysql ,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        },{
+            coverImageLink:node ,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        },{
+            coverImageLink:java ,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        },{
+            coverImageLink:taildwin,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }
     ],
     contact: [

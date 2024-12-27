@@ -3,7 +3,7 @@ import './SideMenu.css'
 const SideMenu = ({ isSideMenuOpen, toggleSideMenu }) => {
     return (
         <div
-            className={` side-menu fixed inset-y-0 right-0 z-10 bg-black bg-opacity-90 w-[400px] ${isSideMenuOpen ? 'open' : ''}`}
+            className={` side-menu fixed inset-y-0 right-0 z-20 bg-black bg-opacity-90 w-[400px] ${isSideMenuOpen ? 'open' : ''}`}
         >
             <div className="flex justify-start p-4">
                 <button

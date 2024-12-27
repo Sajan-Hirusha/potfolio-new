@@ -20,12 +20,13 @@ const Header = () => {
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <nav className="flex items-center justify-between h-16 lg:h-20">
                         <div className="flex-shrink-0">
-                            <a href="#" title="" className="flex">
+                            <a  href="#" title="" className="flex text-xs text-white items-center justify-center tracking-extra">
                                 <img
-                                    className="w-auto h-16 rounded-full"
+                                    className="w-auto h-16 rounded-full mr-5"
                                     src={sajanImg}
                                     alt="Logo"
                                 />
+                                SAJAN HIRUSHA
                             </a>
                         </div>
 
