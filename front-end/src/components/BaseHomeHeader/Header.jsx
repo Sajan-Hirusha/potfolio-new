@@ -1,7 +1,7 @@
 import sajanImg from '../../assets/images/sajan.jpg'
 import { useState } from "react";
-import './SideMenu.css';
 import SideMenu from "./SideMenu.jsx";
+import './Header.css'
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,21 +33,13 @@ const Header = () => {
                         <button
                             type="button"
                             onClick={toggleMobileMenu}
-                            className="inline-flex p-2 text-white transition-all duration-200 rounded-md md:hidden focus:bg-gray-800 hover:bg-gray-800"
+                            className="navbar-toggler inline-flex p-2 text-white transition-all duration-200 rounded-md md:hidden focus:bg-gray-800 hover:bg-gray-800"
                         >
-                            <svg
-                                className="w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"
-                                />
+                            <svg className="icon headerIcon" width="20" height="20" fill="white"
+                                 viewBox="0 0 24 24">
+                                <rect className="line line1" x="5" y="4" width="18" height="2" rx="1"/>
+                                <rect className="line line2" x="3" y="12" width="20" height="2" rx="1"/>
+                                <rect className="line line3" x="1" y="20" width="22" height="2" rx="1"/>
                             </svg>
                         </button>
 
@@ -92,21 +84,13 @@ const Header = () => {
                             <button
                                 type="button"
                                 onClick={toggleSideMenu}
-                                className="inline-flex p-2 text-white transition-all duration-200 rounded-md focus:bg-gray-800 hover:bg-gray-800"
+                                className="navbar-toggler inline-flex p-2 text-white transition-all duration-200 rounded-md focus:bg-gray-800 hover:bg-gray-950"
                             >
-                                <svg
-                                    className="w-6 h-6"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M4 6h16M4 12h16m-7 6h7"
-                                    />
+                                <svg className="icon headerIcon" width="20" height="20" fill="white"
+                                     viewBox="0 0 24 24">
+                                    <rect className="line line1" x="5" y="4" width="18" height="2" rx="1"/>
+                                    <rect className="line line2" x="3" y="12" width="20" height="2" rx="1"/>
+                                    <rect className="line line3" x="1" y="20" width="22" height="2" rx="1"/>
                                 </svg>
                             </button>
                         </div>
@@ -114,13 +98,13 @@ const Header = () => {
 
                     {/* Side Menu */}
                     {isSideMenuOpen && (
-                       <SideMenu  isSideMenuOpen={isSideMenuOpen} toggleSideMenu={toggleSideMenu} />
+                        <SideMenu isSideMenuOpen={isSideMenuOpen} toggleSideMenu={toggleSideMenu}/>
                     )}
 
                     {/* Mobile Menu */}
                     {isMobileMenuOpen && (
                         <div className="fixed inset-0 z-10 bg-black bg-opacity-90">
-                            <div className="flex justify-end p-4">
+                        <div className="flex justify-end p-4">
                                 <button
                                     type="button"
                                     onClick={toggleMobileMenu}
