@@ -7,12 +7,12 @@ import TopSlider from "../BaseHomeSlider/TopSlider.jsx";
 
 const BaseHomeHeadSection =()=>{
     return(
-        <div className="BaseHomeHeadSection grid grid-cols-12 gap-4 bg-[#141414]">
+        <div className="BaseHomeHeadSection grid grid-cols-12 gap-2 bg-[#141414]">
             <div className="col-span-11  p-4 text-white px-20">
                 <TopSlider/>
             </div>
 
-            <div className="homeIcon grid grid-cols-1 col-span-1 bg-green-500 p-4 text-white">
+            <div className="homeIcon grid grid-cols-1 col-span-1 bg-[#141414] p-4 text-white py-20">
                 <img className="w-10 h-10 mx-auto" id="darkMode" src={darkMode} alt="darkMode"/><br/>
                 <img className="w-10 h-10 mx-auto" src={facebookLogo} alt="facebook"/><br/>
                 <img className="w-10 h-10 mx-auto" src={whatsappLogo} alt="whatsapp"/><br/>

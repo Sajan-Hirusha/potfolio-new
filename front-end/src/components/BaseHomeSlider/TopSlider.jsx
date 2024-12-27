@@ -1,14 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import {useState, useEffect, useRef} from "react";
 import slider01 from '../../assets/images/slider01.jpg';
 import slider02 from '../../assets/images/slider02.jpg';
 import slider03 from '../../assets/images/slider03.jpg';
+import Details from '../../models/Details.jsx';
+import './TopSlider.css';
+import Typed from "typed.js";
 
 const images = [slider01, slider02, slider03];
 
 const TopSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isSliding, setIsSliding] = useState(false);
-    const intervalRef = useRef(null); // To store the interval ID
+    const intervalRef = useRef(null);
+
+    const textRefs = [useRef(null), useRef(null), useRef(null)]; // Initialize an array of refs
 
     // Reset sliding flag after a transition
     useEffect(() => {
@@ -16,7 +21,7 @@ const TopSlider = () => {
 
         const timeout = setTimeout(() => {
             setIsSliding(false);
-        }, 3000); // Duration of the slide transition
+        }, 3000);
 
         return () => clearTimeout(timeout);
     }, [currentSlide, isSliding]);
@@ -26,7 +31,7 @@ const TopSlider = () => {
         if (intervalRef.current) {
             clearInterval(intervalRef.current);
         }
-        intervalRef.current = setInterval(nextSlide, 5000);
+        intervalRef.current = setInterval(nextSlide, 700000000);
     };
 
     useEffect(() => {
@@ -47,11 +52,39 @@ const TopSlider = () => {
         if (isSliding) return;
         setIsSliding(true);
         setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
-        startAutoSlide(); 
+        startAutoSlide();
     };
 
+    // Typed.js initialization for each textRef
+    useEffect(() => {
+        const options = {
+            typeSpeed: 70,
+            backSpeed: 70,
+            backDelay: 1000,
+            loop: true,
+        };
+
+        const typedInstances = textRefs.map((ref, index) => {
+            const optionsWithStrings = {
+                ...options,
+                strings: [
+                    `a Professional Coder ${index + 1}.`,
+                    'an Undergraduate',
+                    'a Developer.',
+                    'a Freelancer.'
+                ],
+            };
+            return new Typed(ref.current, optionsWithStrings);
+        });
+
+        // Cleanup typed instances when the component unmounts
+        return () => {
+            typedInstances.forEach(typedInstance => typedInstance.destroy());
+        };
+    }, []);
+
     return (
-        <div className="top-slider h-[80vh] overflow-hidden relative">
+        <div className="top-slider h-[80vh] overflow-hidden relative rounded-3xl">
             <div className="relative w-full h-full">
                 {images.map((src, index) => (
                     <div
@@ -68,9 +101,59 @@ const TopSlider = () => {
                     >
                         <img
                             src={src}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover rounded-3xl"
                             alt={`Slide ${index + 1}`}
                         />
+
+                        <div
+                            className="absolute grid grid-cols-12 gap-4 inset-0 text-white text-4xl p-4 bg-black/30 rounded-3xl">
+                            <div className="sliderSectionOne col-span-6 relative left-[13%] my-auto">
+                                <p className="intro mb-2 text-4xl font-bold">
+                                    {Details.sliderTopicsPart1[index]} <span>{Details.sliderTopicsPart2[index]}</span>
+                                </p>
+                                <h2 className="dynamic-txts-head mb-5 text-4xl font-bold">
+                                    I'm <span className="dynamic-txts" ref={textRefs[index]}></span>
+                                </h2>
+
+                                <p className="para text-lg ">{Details.sliderPara[index]}</p><br/>
+                                <button id="introBtn1" className="introBtn bg-[#D2042D]"><span className="bg-[#D2042D]"></span>{Details.sliderButton1[index]}</button>
+                                {index === 0 ? (
+                                <button id="introBtn2" className="introBtn bg-transparent ml-2"><span className="bg-[#D2042D]"></span>View Profile</button>
+                                ) : ("")}
+                            </div>
+                            <div className="sliderSectionTwo col-span-6 my-auto mx-[16%]">
+                                {index === 0 ? (
+                                    <div id={`headerImageId${index}`} className="headerImage"></div>
+                                ) : (
+                                    <div className="alternativeHeaderImage grid grid-cols-2 gap-4 ">
+                                        <img src={slider01} alt="img" className="w-[200px] h-[100px]"/>
+                                        <img src={slider02} alt="img" className="w-[200px] h-[100px]"/>
+                                        <img src={slider03} alt="img" className="w-[200px] h-[100px]"/>
+                                        <img src={slider01} alt="img" className="w-[200px] h-[100px]"/>
+                                        <a href="" className="text-base flex items-center text-white">
+                                            Discover More
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                strokeWidth="2"
+                                                stroke="currentColor"
+                                                className="w-4 h-4 ml-2"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    d="M12 4.5l7 7-7 7M5 11.5h14"
+                                                />
+                                            </svg>
+                                        </a>
+
+                                    </div>
+
+                                )}
+                            </div>
+
+                        </div>
                     </div>
                 ))}
             </div>
@@ -80,8 +163,11 @@ const TopSlider = () => {
                     <button
                         key={index}
                         type="button"
-                        className={`w-3 h-3 rounded-full ${currentSlide === index ? "bg-blue-500" : "bg-gray-300"}`}
-                        onClick={() => { setCurrentSlide(index); startAutoSlide(); }}
+                        className={`w-3 h-3 rounded-full ${currentSlide === index ? "bg-black" : "bg-gray-300"}`}
+                        onClick={() => {
+                            setCurrentSlide(index);
+                            startAutoSlide();
+                        }}
                         aria-label={`Slide ${index + 1}`}
                     ></button>
                 ))}
@@ -92,7 +178,8 @@ const TopSlider = () => {
                 className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 onClick={prevSlide}
             >
-                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+                <span
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
                     <svg
                         className="w-4 h-4 text-white"
                         xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +203,8 @@ const TopSlider = () => {
                 className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 onClick={nextSlide}
             >
-                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+                <span
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
                     <svg
                         className="w-4 h-4 text-white"
                         xmlns="http://www.w3.org/2000/svg"
