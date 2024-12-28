@@ -1,0 +1,99 @@
+.baseHome-contact .contact-right form input {
+    width: 98%;
+    height: 43px;
+    border-radius: 8px;
+    margin-top: 7px;
+    background-color: #191b1e;
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid #3c4851 2px;
+    border-bottom: solid #3c4851 2px;
+}
+.baseHome-contact .contact-right label{
+    margin-top: 16px;
+}
+.baseHome-contact form input:hover ,.baseHome-contact form input:focus,.baseHome-contact form input:active {
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid rgba(210, 4, 45, 0.67) 2px;
+    border-bottom: solid rgba(210, 4, 45, 0.67) 2px;
+}
+
+
+.baseHome-contact textarea {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #191b1e;
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid #3c4851 2px;
+    border-bottom: solid #3c4851 2px;
+}
+.baseHome-contact textarea:hover,.baseHome-contact textarea:focus,.baseHome-contact textarea:active {
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid rgba(210, 4, 45, 0.67) 2px;
+    border-bottom: solid rgba(210, 4, 45, 0.67) 2px;
+}
+
+
+.baseHome-contact #myName {
+    font-family: 'Serif';
+    font-weight: 700;
+}
+.baseHome-contact #myName span {
+    color: #D2042D;
+}
+
+.baseHome-contact .contactButton {
+    width: 91px;
+    height: 34px;
+    background-color: #D2042D;
+    border-radius: 10px;
+    font: 500 13px "sans-serif";
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    border: 2px #252d32 solid;
+}
+.baseHome-contact .contactButton span {
+    background: #D2042D;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+}
+.baseHome-contact .contactButton:hover span {
+    width: 100%;
+}
+.baseHome-contact .contactButton:hover {
+    background: transparent;
+    color: white;
+}
+
+.baseHome-contact .contact-text {
+    letter-spacing: 0.04em;
+    font-weight: 100;
+}
+.baseHome-contact .text:hover {
+    text-decoration: underline;
+    text-decoration-color: #D2042D;
+    text-decoration-style: dashed;
+    text-underline-offset: 8px !important;
+}
+
+.baseHome-contact #contactIntro {
+    font: 100 13px Montserrat;
+}
+.baseHome-contact .contactSubmit{
+    border-radius: 8px;
+    border-top: solid #3c4851 2px;
+    border-left: solid #3c4851 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}

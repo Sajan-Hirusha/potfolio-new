@@ -2,10 +2,11 @@ import AboutImage from '../../assets/images/about.jpg'
 import Details from "../../models/Details.jsx";
 import './BaseHomeBodySection.css'
 import BaseHomeSkillsSlider from "./BaseHomeSkillsSlider/BaseHomeSkillsSlider.jsx";
+import BaseHomeContact from "./BaseHomeContact/BaseHomeContact.jsx";
 const BaseHomeBodySection = () => {
     return (
         <div className="BaseHomeBodySection">
-            <h1 className="text-center text-white text-5xl font-bold my-20 ">My Skills</h1>
+            <h1 className="text-center text-white text-5xl font-bold !my-20 ">My Skills</h1>
             <BaseHomeSkillsSlider/>
             <div className="about-me mx-10 my-20">
                 <h1 className="text-center text-white text-5xl font-bold mb-10 ">About Me</h1>
@@ -25,7 +26,10 @@ const BaseHomeBodySection = () => {
                     </div>
                 </div>
             </div>
+            <h1 className="text-center text-white text-5xl font-bold !my-20 ">Contact Me</h1>
+            <BaseHomeContact/>
         </div>
+
     )
 }
 export default BaseHomeBodySection;
