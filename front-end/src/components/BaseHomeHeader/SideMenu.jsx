@@ -1,6 +1,7 @@
 import './SideMenu.css'
 
 const SideMenu = ({ isSideMenuOpen, toggleSideMenu }) => {
+
     return (
         <div
             className={` side-menu fixed inset-y-0 right-0 z-20 bg-black bg-opacity-90 w-[400px] ${isSideMenuOpen ? 'open' : ''}`}
@@ -27,32 +28,12 @@ const SideMenu = ({ isSideMenuOpen, toggleSideMenu }) => {
                     </svg>
                 </button>
             </div>
-            <nav className="flex flex-col items-center mt-10 space-y-4">
-                <a
-                    href="#"
-                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
-                >
-                    Features
-                </a>
-                <a
-                    href="#"
-                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
-                >
-                    Solutions
-                </a>
-                <a
-                    href="#"
-                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
-                >
-                    Resources
-                </a>
-                <a
-                    href="#"
-                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70"
-                >
-                    Pricing
-                </a>
-            </nav>
+            <div className="side-menu-body">
+                <h3 className="text-base text-white text-center !mt-10 blinking-text">
+                    SAJAN HIRUSHA
+                </h3>
+
+            </div>
         </div>
     );
 };

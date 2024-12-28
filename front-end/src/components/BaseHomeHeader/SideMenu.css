@@ -1,0 +1,18 @@
+.side-menu-body{
+    letter-spacing: 13px;
+    font-weight: 100 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.blinking-text {
+    animation: blink 2s infinite;
+}

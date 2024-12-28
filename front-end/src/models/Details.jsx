@@ -66,12 +66,40 @@ const Details = {
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }
     ],
-    contact: [
+    educationDetails : [
         {
-            backgroundImage: 'images/contactUsBackground.jpg',
-            heading: 'Contact Us',
-            para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        }
+            degree: 'Bachelor of Science in Computer Science & Technology',
+            institution: 'Uva Wellassa University',
+            duration: '2022 - Present',
+            description:
+                'Pursuing advanced knowledge in computer science with a focus on software development, data analysis, and emerging technologies.',
+        },
+        {
+            degree: 'Advanced Level',
+            institution: 'Example High School',
+            duration: '2020 - 2022',
+            results: [
+                {subject: 'Combined Mathematics', grade: 'B'},
+                {subject: 'Physics', grade: 'C'},
+                {subject: 'Chemistry', grade: 'C'},
+            ],
+        },
+        {
+            degree: 'Ordinary Level',
+            institution: 'Example High School',
+            duration: '2018 - 2020',
+            results: [
+                {subject: 'Science', grade: 'A'},
+                {subject: 'Mathematics', grade: 'A'},
+                {subject: 'Commerce', grade: 'A'},
+                {subject: 'Sinhala Language', grade: 'A'},
+                {subject: 'Health', grade: 'A'},
+                {subject: 'History', grade: 'A'},
+                {subject: 'Buddhism', grade: 'A'},
+                {subject: 'English Language', grade: 'B'},
+                {subject: 'Art', grade: 'C'},
+            ],
+        },
     ],
     footer: [
         {

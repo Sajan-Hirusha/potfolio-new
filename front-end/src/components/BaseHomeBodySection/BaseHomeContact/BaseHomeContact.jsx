@@ -2,15 +2,15 @@ import './BaseHomeContact.css'
 
 const BaseHomeContact = () => {
     return (
-        <div  className="baseHome-contact grid grid-cols-12 gap-2">
-            <div className="col-span-5 contact-left bg-[#191b1e] rounded-xl p-10 mx-4 ">
-                <h1 id="myName" className="text-5xl text-white text-center !mb-14">I’m <span> Sajan Hirusha</span></h1>
-                <p className="contact-text text-lg text-white text-justify !mb-14">Phone : 0702789166
+        <div  className="baseHome-contact grid grid-cols-12 gap-8 mb-20">
+            <div className="col-span-5 contact-left bg-[#191b1e] rounded-xl p-10 ml-10 ">
+                <h1 id="myName" className="text-5xl text-white text-center !mb-16">I’m <span> Sajan Hirusha</span></h1>
+                <p className="contact-text text-lg text-white text-justify !mb-8">Phone : 0702789166
                     <a href="tel:+94702789166" className="ml-10">
                         <button className="contactButton"><span></span>Call Us</button>
                     </a>
                 </p>
-                <p className="contact-text text-lg text-white text-justify !mb-14">Email: sajanhirusha@gmail.com
+                <p className="contact-text text-lg text-white text-justify !mb-8">Email: sajanhirusha@gmail.com
                     <a href="mailto:sajanhirusha@gmail.com" className="ml-10">
                         <button className="contactButton"><span></span>Mail Us</button>
                     </a>
@@ -31,17 +31,13 @@ const BaseHomeContact = () => {
                     </button>
                     <button
                         className="ui circular instagram icon button !rounded w-[71%]"
-                        style={{
-                            background: 'linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5)',
-                            color: 'white',
-                        }}
                     >
                         <i className="instagram icon"></i>&nbsp;Instagram
                     </button>
                 </div>
 
             </div>
-            <div className="contact-right col-span-7 bg-[#191b1e] rounded-xl mx-4">
+            <div className="contact-right col-span-7 bg-[#191b1e] rounded-xl mr-10">
                 <p className="text-xl !mt-8 text-center text-[#D2042D]">Let’s Connect and Create Something Extraordinary Together!</p>
                 <form action="" className="space-y-4 p-10 !my-4">
                     <div className="flex flex-wrap gap-4">
@@ -117,7 +113,6 @@ const BaseHomeContact = () => {
                         </button>
                     </div>
                 </form>
-
             </div>
         </div>
     );
