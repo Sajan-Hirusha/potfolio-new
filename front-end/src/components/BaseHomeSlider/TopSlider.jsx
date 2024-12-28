@@ -135,7 +135,7 @@ const TopSlider = () => {
                                 {index === 0 ? (
                                     <div id={`headerImageId${index}`} className="headerImage"></div>
                                 ) :index === 1 ? (
-                                    <div className="alternativeHeaderImage grid grid-cols-2 gap-2 ">
+                                    <div className="alternativeHeaderImage grid grid-cols-2 gap-y-2 ">
                                         {skillsImages.map((image, idx) => (
                                             <img
                                                 key={idx}
@@ -165,7 +165,7 @@ const TopSlider = () => {
                                     </div>
 
                                 ) : (
-                                    <div className="alternativeHeaderImage grid grid-cols-2 gap-2 ">
+                                    <div className="alternativeHeaderImage grid grid-cols-2 gap-y-2 ">
                                         {projectsImages.map((image, idx) => (
                                             <img
                                                 key={idx}

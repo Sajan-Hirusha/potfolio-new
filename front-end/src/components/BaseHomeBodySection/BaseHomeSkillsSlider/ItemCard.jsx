@@ -11,7 +11,7 @@ function ItemCard(props) {
                 style={{ objectFit: 'contain' }}
             />
             <div className="bg-black p-4 ">
-                <p className="text-white text-xs mb-4"> {props.itemName}</p>
+                <p className="text-white text-xs mb-4"> {props.description}</p>
             </div>
         </div>
     );

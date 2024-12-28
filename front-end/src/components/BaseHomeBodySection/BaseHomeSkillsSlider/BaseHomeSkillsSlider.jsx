@@ -3,19 +3,19 @@ import ItemCard from "./ItemCard.jsx";
 import Details from "../../../models/Details.jsx";
 
 const BaseHomeSkillsSlider =()=>{
-    const [categoryList, setCategoryList] = useState([]);
+    const [skillsList, setSkillsList] = useState([]);
     const [currentStartIndex, setCurrentStartIndex] = useState(0);
     const ITEMS_VISIBLE = 6;
 
-    const loadCategories = async () => {
+    const loadSkills = async () => {
         const res = Details.skills;
         if (res && typeof res !== "boolean") {
-            setCategoryList(res);
+            setSkillsList(res);
         }
     };
 
     useEffect(() => {
-        loadCategories();
+        loadSkills();
     }, []);
 
     useEffect(() => {
@@ -23,25 +23,25 @@ const BaseHomeSkillsSlider =()=>{
             goToNext();
         }, 4000);
         return () => clearInterval(interval);
-    }, [categoryList]);
+    }, [skillsList]);
 
     const goToNext = () => {
-        setCurrentStartIndex((prev) => (prev + 1) % categoryList.length);
+        setCurrentStartIndex((prev) => (prev + 1) % skillsList.length);
     };
 
     const goToPrevious = () => {
-        setCurrentStartIndex((prev) => (prev - 1 + categoryList.length) % categoryList.length);
+        setCurrentStartIndex((prev) => (prev - 1 + skillsList.length) % skillsList.length);
     };
 
     const loadNextItems = async () => {
         const res = Details.skills
         if (res && typeof res !== "boolean") {
-            setCategoryList((prevList) => [...prevList, ...res]);
+            setSkillsList((prevList) => [...prevList, ...res]);
         }
     };
 
     useEffect(() => {
-        if (currentStartIndex >= categoryList.length - ITEMS_VISIBLE) {
+        if (currentStartIndex >= skillsList.length - ITEMS_VISIBLE) {
             loadNextItems();
         }
     }, [currentStartIndex]);
@@ -85,7 +85,7 @@ const BaseHomeSkillsSlider =()=>{
                         transition: "transform 1s ease-in-out",
                     }}
                 >
-                    {categoryList
+                    {skillsList
                         .filter((item) => item && item.name !== "Unselected")
                         .map((item, index) => (
                             <div
@@ -94,7 +94,7 @@ const BaseHomeSkillsSlider =()=>{
                             >
                                 <ItemCard
                                     imageUrl={item.coverImageLink}
-                                    itemName={item.description}
+                                    description={item.description}
                                     className={classname}
                                 />
                             </div>
