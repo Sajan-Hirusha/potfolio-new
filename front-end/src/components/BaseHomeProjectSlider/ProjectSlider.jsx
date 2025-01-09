@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Details from "../../models/Details.jsx";
-import ItemCard from "./ItemCard/ItemCard.jsx";
-import image from '../../assets/images/node.png'
+import ProjectCard from "./ItemCard/ProjectCard.jsx";
+
 function ProjectSlider() {
     const [currentStartIndex, setCurrentStartIndex] = useState(0);
     const ITEMS_VISIBLE = 6;
@@ -88,22 +88,19 @@ function ProjectSlider() {
                         transition: "transform 1s ease-in-out",
                     }}
                 >
-
                     {projectList.map((item, index) => (
                         <div key={index} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 min-[1900px]:w-1/5 min-[2500px]:w-1/6 flex justify-center items-center mt-10">
-                           <p>{item.tags}</p>
-                            <img src={image} alt=""/>
-                            {item && item.state && (
-                                <ItemCard
-                                    imageUrl={item.coverLinks?.[0]}
-                                    imageUrls={item.coverLinks}
+
+                                <ProjectCard
+                                    imageUrl={item.coverImageLinks?.[0]}
+                                    imageUrls={item.coverImageLinks}
                                     key={index}
                                     class={"bg-gray-50 p-1"}
                                     className={classname}
                                     category={item.tags}
                                     itemName={item.projectName}
                                 />
-                            )}
+                            )
                         </div>
                     ))}
                 </div>
