@@ -5,7 +5,7 @@ const Footer = () => {
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
                     <div>
-                        <p className="text-base text-gray-500">Company</p>
+                        <p className="text-lg underline text-[#D2042D]">Company</p>
                         <ul className="mt-8 space-y-4">
                             <li>
                                 <a href="#" title=""
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="text-base text-gray-500">Help</p>
+                        <p className="text-lg underline text-[#D2042D]">Help</p>
                         <ul className="mt-8 space-y-4">
                             <li>
                                 <a href="#" title=""
@@ -53,7 +53,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="text-base text-gray-500">Resources</p>
+                        <p className="text-lg underline text-[#D2042D]">Resources</p>
                         <ul className="mt-8 space-y-4">
                             <li>
                                 <a href="#" title=""
@@ -79,7 +79,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="text-base text-gray-500">Extra Links</p>
+                        <p className="text-lg underline text-[#D2042D]">Extra Links</p>
                         <ul className="mt-8 space-y-4">
                             <li>
                                 <a href="#" title=""

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Details from "../../models/Details.jsx";
 import ProjectCard from "./ItemCard/ProjectCard.jsx";
-
 function ProjectSlider() {
     const [currentStartIndex, setCurrentStartIndex] = useState(0);
     const ITEMS_VISIBLE = 6;
@@ -74,12 +73,11 @@ function ProjectSlider() {
 
     const translateXValue = -(currentStartIndex * (100 / visibleItems));
 
-    const classname = "transition-transform duration-[1000ms] ease-in-out hover:scale-110";
+    const classname = "transition-transform duration-[1000ms] ease-in-out hover:scale-105";
 
     return (
         <div className="ProectSlider relative w-[88%] mx-auto " >
-            {/* Carousel Container */}
-            <h2 className="text-center max-[350px]:text-xl text-2xl sm:text-3xl md:text-4xl lg:text-4xl min-[1900px]:text-6xl mb-4 font-thin">My Projects</h2>
+            <h1 className="text-center text-white text-5xl font-bold !my-20">My Projects</h1>
             <div className="overflow-hidden rounded-lg">
                 <div
                     className="flex"

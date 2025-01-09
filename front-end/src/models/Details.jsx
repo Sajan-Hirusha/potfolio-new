@@ -1,7 +1,3 @@
-import taildwin from '../assets/images/tailwindCsss.png'
-import mysql from '../assets/images/mySql.png'
-import java from '../assets/images/java.png'
-import node from '../assets/images/node.png'
 
 const Details = {
     name: 'Sabari Holdings',
@@ -53,35 +49,55 @@ const Details = {
     ],
     skills: [
         {
-            coverImageLink:mysql ,
+            coverImageLink:'/assets/images/mySql.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         },{
-            coverImageLink:node ,
+            coverImageLink:'/assets/images/node.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         },{
-            coverImageLink:java ,
+            coverImageLink:'/assets/images/java.png' ,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         },{
-            coverImageLink:taildwin,
+            coverImageLink:'/assets/images/tailwindCsss.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }
     ],
     projects: [
         {
             projectName:'project1',
-            coverImageLinks:[mysql,node,java,taildwin] ,
+            coverImageLinks:[
+                '/assets/images/tailwindCsss.png',
+                '/assets/images/mySql.png',
+                '/assets/images/java.png',
+                '/assets/images/node.png',
+            ] ,
             tags:['Industry','Grouped'],
         },{
             projectName:'project1',
-            coverImageLinks:[mysql,node,java,taildwin] ,
+            coverImageLinks:[
+            '/assets/images/tailwindCsss.png',
+                '/assets/images/mySql.png',
+                '/assets/images/java.png',
+                '/assets/images/node.png',
+            ] ,
             tags: ['Industry','Grouped'],
         },{
             projectName:'project2',
-            coverImageLinks:[mysql,node,java,taildwin] ,
+            coverImageLinks:[
+                '/assets/images/tailwindCsss.png',
+                '/assets/images/mySql.png',
+                '/assets/images/java.png',
+                '/assets/images/node.png',
+            ] ,
             tags: ['Industry','Grouped'],
         },{
             projectName:'project3',
-            coverImageLinks:[mysql,node,java,taildwin] ,
+            coverImageLinks:[
+                '/assets/images/tailwindCsss.png',
+                '/assets/images/mySql.png',
+                '/assets/images/java.png',
+                '/assets/images/node.png',
+            ] ,
             tags: ['Industry','Grouped'],
         }
     ],

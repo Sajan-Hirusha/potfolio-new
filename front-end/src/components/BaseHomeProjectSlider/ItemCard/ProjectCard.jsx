@@ -2,14 +2,13 @@ import { useState } from "react";
 
 const styles = {
     cardContainer: {
-        width: '260px', // Fixed width for the card
-        height: '300px', // Fixed height for the card
-        overflow: 'hidden', // Ensures no content spills out
+        width: '260px',
+        height: '280px',
+        overflow: 'hidden',
     },
     imageContainer: {
         width:'260px',
         height:'200px',
-        objectFit: 'cover', // Ensure the image scales proportionally
     },
 };
 
@@ -26,16 +25,15 @@ function ProjectCard(props) {
             (prevIndex) => (prevIndex - 1 + props.imageUrls.length) % props.imageUrls.length
         );
     };
-
     return (
         <div
             className={`${props.className} bg-white itemCard shadow-md rounded-lg text-center relative mx-auto`}
-            style={styles.cardContainer} 
+            style={styles.cardContainer}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             {isHovered && props.imageUrls ? (
-                <div className="relative overflow-hidden rounded-lg">
+                <div className="relative overflow-hidden rounded-lg ">
                     <div
                         className="flex transition-transform duration-300 ease-in-out"
                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -43,7 +41,7 @@ function ProjectCard(props) {
                         {props.imageUrls.map((slide, index) => (
                             <div className="w-full flex-shrink-0" key={index}>
                                 <img
-                                    className="rounded-t-lg "
+                                    className="rounded-t-lg object-contain"
                                     src={slide}
                                     alt={`Slide ${index + 1}`}
                                     style={styles.imageContainer}
@@ -70,17 +68,17 @@ function ProjectCard(props) {
                 <img
                     src={props.imageUrl}
                     alt="productImage"
-                    className="rounded-t-lg w-full"
+                    className="rounded-t-lg w-full object-contain"
                     style={styles.imageContainer}
                 />
             )}
 
-            <div className="m-auto">
-                <div className="flex flex-wrap gap-2 mb-1">
+            <div className="m-auto my-4 bg-black p-4">
+                <div className="flex flex-wrap gap-2 mb-1 justify-center">
                     {props.category.map((tag, index) => (
                         <span
                             key={index}
-                            className="px-2 py-1 rounded-full text-xs font-medium"
+                            className="px-2 py-1 rounded-md text-xs font-medium"
                             style={{
                                 backgroundColor: getTagColor(index),
                                 color: "white",
@@ -90,7 +88,7 @@ function ProjectCard(props) {
                         </span>
                     ))}
                 </div>
-                <h3 className="text-sm font-semibold text-gray-800 mb-4 text-white">
+                <h3 className="text-sm font-semibold  mb-4 text-white">
                     {props.itemName}
                 </h3>
             </div>
