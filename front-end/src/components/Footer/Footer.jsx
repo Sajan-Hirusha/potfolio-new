@@ -1,5 +1,5 @@
-import './BaseHomeFooter.css'
-const BaseHomeFooter = () => {
+import './Footer.css'
+const Footer = () => {
     return (
         <div className="py-10 bg-black  sm:pt-16 lg:pt-24">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -159,4 +159,4 @@ const BaseHomeFooter = () => {
         </div>
     )
 }
-export default BaseHomeFooter
+export default Footer

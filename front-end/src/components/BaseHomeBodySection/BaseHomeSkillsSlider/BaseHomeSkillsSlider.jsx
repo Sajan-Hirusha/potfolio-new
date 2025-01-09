@@ -77,6 +77,7 @@ const BaseHomeSkillsSlider =()=>{
 
     return (
         <div className="relative w-[91%] mx-auto ">
+            <h1 className="text-center text-white text-5xl font-bold !my-20">My Skills</h1>
             <div className="overflow-hidden rounded-lg">
                 <div
                     className="flex"
@@ -102,7 +103,7 @@ const BaseHomeSkillsSlider =()=>{
                 </div>
             </div>
 
-            <div className="absolute top-[44%] left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-[61%] left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToPrevious}
                     className="bg-white bg-opacity-25 p-2 rounded-full"
@@ -110,7 +111,7 @@ const BaseHomeSkillsSlider =()=>{
                     &#8592;
                 </button>
             </div>
-            <div className="absolute top-[44%] right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-[61%] right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToNext}
                     className="bg-white bg-opacity-25 p-2 rounded-full"
@@ -119,6 +120,6 @@ const BaseHomeSkillsSlider =()=>{
                 </button>
             </div>
         </div>
-);
+    );
 }
 export default BaseHomeSkillsSlider;

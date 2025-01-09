@@ -1,7 +1,7 @@
-import Header from "../../components/BaseHomeHeader/Header.jsx";
+import Header from "../../components/Header/Header.jsx";
 import BaseHomeHeadSection from "../../components/BaseHomeHeadSection/BaseHomeHeadSection.jsx";
 import BaseHomeBodySection from "../../components/BaseHomeBodySection/BaseHomeBodySection.jsx";
-import BaseHomeFooter from "../../components/BaseHomeFooter/BaseHomeFooter.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 const BaseHome = () => {
     return (
@@ -9,7 +9,7 @@ const BaseHome = () => {
             <Header/>
             <BaseHomeHeadSection/>
             <BaseHomeBodySection/>
-            <BaseHomeFooter/>
+            <Footer/>
         </div>
     );
 }
