@@ -1,7 +1,7 @@
 import {useState, useEffect, useRef} from "react";
-import slider01 from '../../assets/images/slider01.jpg';
-import slider02 from '../../assets/images/slider02.jpg';
-import slider03 from '../../assets/images/slider03.jpg';
+import slider01 from '/assets/images/slider01.jpg';
+import slider02 from '/assets/images/slider02.jpg';
+import slider03 from '/assets/images/slider03.jpg';
 import skillsImage01 from '/assets/images/react.png';
 import skillsImage02 from '/assets/images/node.png';
 import skillsImage03 from '/assets/images/mongoDB.png';

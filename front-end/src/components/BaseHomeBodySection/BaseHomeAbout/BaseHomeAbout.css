@@ -1,4 +1,4 @@
-.baseHomeAbout .introBtn{
+ .introBtn{
     width: 120px;
     height: 40px;
     font: 500 13px "sans-serif";
@@ -7,8 +7,9 @@
     z-index: 1000;
     position: relative;
     color:white;
+     border-radius: 10px;
 }
-.baseHomeAbout .introBtn span{
+.introBtn span{
     height: 100%;
     width: 0;
     position: absolute;
@@ -17,11 +18,9 @@
     z-index: -1;
     transition: 1s;
 }
-
-.baseHomeAbout .introBtn:hover span {
+.introBtn:hover span {
     width: 100%;
 }
-
-.baseHomeAbout .introBtn:hover{
+.introBtn:hover{
     background: transparent !important;
 }

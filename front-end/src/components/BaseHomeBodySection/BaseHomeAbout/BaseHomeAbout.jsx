@@ -20,7 +20,7 @@ function BaseHomeAbout() {
                         <p className="text-white/80 text-lg  mt-4 mr-20 text-justify">{Details.about[0].para}</p>
 
                         <button id="introBtn1" className="introBtn bg-[#D2042D] mt-10"><span
-                            className="bg-[#D2042D]"></span>Download My Cv
+                            className="bg-[#D2042D]"></span>View Gallery
                         </button>
                     </div>
                 </div>
