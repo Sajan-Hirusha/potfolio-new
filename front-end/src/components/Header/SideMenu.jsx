@@ -1,10 +1,18 @@
-import './SideMenu.css'
+import { useState, useEffect } from 'react';
+import './SideMenu.css';
 
 const SideMenu = ({ isSideMenuOpen, toggleSideMenu }) => {
+    const tags = [
+        { name: "Web Development", color: "bg-blue-500" },
+        { name: "UI/UX Design", color: "bg-green-500" },
+        { name: "SEO Optimization", color: "bg-red-500" },
+        { name: "Consultation", color: "bg-yellow-500" },
+        { name: "App Development", color: "bg-purple-500" },
+    ];
 
     return (
         <div
-            className={` side-menu fixed inset-y-0 right-0 z-20 bg-black bg-opacity-90 w-[400px] ${isSideMenuOpen ? 'open' : ''}`}
+            className={`side-menu fixed inset-y-0 right-0 z-20 bg-black bg-opacity-90 w-[400px] ${isSideMenuOpen ? 'open' : ''}`}
         >
             <div className="flex justify-start p-4">
                 <button
@@ -33,6 +41,38 @@ const SideMenu = ({ isSideMenuOpen, toggleSideMenu }) => {
                     SAJAN HIRUSHA
                 </h3>
 
+                <h6 className="text-xl text-[#D2042D] text-center !mt-10">
+                    Intro About Working Experience and Services
+                </h6>
+                <p className="text-lg tracking-wide text-white m-10 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Phasellus convallis arcu vel orci vestibulum, at ultrices
+                    nisl placerat. Nulla facilisi. Curabitur at orci ut lectus pellentesque fermentum a a erat. Proin dictum
+                    justo non feugiat tincidunt.
+                </p>
+
+                <div className="!w-[82%] service-tags-container overflow-hidden mt-5 mx-auto ">
+                    <div className="service-tags flex space-x-4">
+                        {tags.map((tag, index) => (
+                            <span
+                                key={index}
+                                className={`${tag.color} text-white py-1 px-3 rounded-md text-sm`}
+                            >
+                {tag.name}
+              </span>
+                        ))}
+                        {tags.map((tag, index) => (
+                            <span
+                                key={index + tags.length}
+                                className={`${tag.color} text-white py-1 px-3 rounded-md text-sm`}
+                            >
+                {tag.name}
+              </span>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );
