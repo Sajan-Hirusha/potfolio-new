@@ -104,12 +104,12 @@ function ProjectSlider() {
                 </div>
             </div>
 
-            <div className="absolute top-[55%] left-2 transform -translate-y-1/2 text-white cursor-pointer">
+            <div className="absolute top-[61%] left-2 transform -translate-y-1/2 text-white cursor-pointer">
                 <button onClick={goToPrevious} className="bg-gray-500 bg-opacity-50 p-2 rounded-full ">
                     &#8592;
                 </button>
             </div>
-            <div className="absolute top-[55%] right-2 transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-[61%] right-2 transform -translate-y-1/2 text-white cursor-pointer ">
                 <button onClick={goToNext} className="bg-gray-500 bg-opacity-50 p-2 rounded-full">
                     &#8594;
                 </button>

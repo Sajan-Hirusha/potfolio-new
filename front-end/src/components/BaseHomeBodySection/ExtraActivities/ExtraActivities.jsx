@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './ExtraActivities.css';
 import Details from "../../../models/Details.jsx";
+import ImageGallery from "../../ImageGallery/ImageGallery.jsx";
 
 const ExtraActivities = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -9,6 +10,11 @@ const ExtraActivities = () => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const toggleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    };
     return (
         <div className="Extra-Activities w-[73%] mx-auto">
             <div id="accordion-flush" className="accordion">
@@ -48,14 +54,16 @@ const ExtraActivities = () => {
                             <div
                                 className="text-white text-lg text-justify m-10 py-5 h-[200px] border-b border-gray-200 dark:border-gray-700">
                                 {item.content}
-                                <button id="introBtn1" className="introBtn bg-[#D2042D] mt-10"><span
-                                    className="bg-[#D2042D]"></span>Download My Cv
+                                <button   onClick={toggleModal} id="introBtn1" className="introBtn bg-[#D2042D] mt-10" ><span
+                                    className="bg-[#D2042D]"></span>View Gallery
                                 </button>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
+
+            <ImageGallery isOpen={isModalOpen} onClose={toggleModal}/>
         </div>
 
     );
