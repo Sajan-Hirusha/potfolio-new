@@ -103,7 +103,7 @@ const BaseHomeSkillsSlider =()=>{
                 </div>
             </div>
 
-            <div className="absolute top-[61%] left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-[61%] sm:left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToPrevious}
                     className="bg-white bg-opacity-25 p-2 rounded-full"
@@ -111,7 +111,7 @@ const BaseHomeSkillsSlider =()=>{
                     &#8592;
                 </button>
             </div>
-            <div className="absolute top-[61%] right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-[61%] right-[0px] sm:right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToNext}
                     className="bg-white bg-opacity-25 p-2 rounded-full"

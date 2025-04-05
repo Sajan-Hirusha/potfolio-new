@@ -16,7 +16,7 @@ const Details = {
         "My Projects",
         "My Skills"
     ],
-    sliderPara : [
+    sliderPara1 : [
         "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and\n" +
         "developer with 2 years of experience. My main target is to provide a good service to my buyers.\n" +
         "Please message me with your requests.",
@@ -26,6 +26,19 @@ const Details = {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\n" +
         "Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer\n" +
         "took a galley of type",
+    ],
+    sliderPara2 : [
+        "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and" +
+        "developer with 2 years of experience.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\n" +
+        "Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\n" +
+        "Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    ],
+    sliderPara3 : [
+        "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem" ,
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem"
     ],
     sliderButton1 : [
        "Contact Me",

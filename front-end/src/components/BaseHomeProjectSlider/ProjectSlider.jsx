@@ -88,7 +88,7 @@ function ProjectSlider() {
     const classname = "transition-transform duration-[1000ms] ease-in-out hover:scale-[103%]";
 
     return (
-        <div className="ProectSlider relative w-[91%] mx-auto border-2 px-20 pb-10 lg:px-0">
+        <div className="ProectSlider relative w-[91%] mx-auto px-20 pb-10 lg:px-0">
             <h1 className="text-center text-white text-5xl font-bold !my-20">My Projects</h1>
             <div className="overflow-hidden rounded-lg">
                 <div
@@ -118,7 +118,7 @@ function ProjectSlider() {
                 </div>
             </div>
 
-            <div className="absolute top-[61%] left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-[61%] left-[0] md:left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToPrevious}
                     className="bg-white bg-opacity-25 p-2 rounded-full"
@@ -126,7 +126,7 @@ function ProjectSlider() {
                     &#8592;
                 </button>
             </div>
-            <div className="absolute top-[61%] right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-[61%] right-[0] md:right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToNext}
                     className="bg-white bg-opacity-25 p-2 rounded-full"

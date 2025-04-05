@@ -94,12 +94,12 @@ const TopSlider = () => {
     }, []);
 
     return (
-        <div className="top-slider h-[80vh] overflow-hidden relative rounded-3xl">
+        <div className="top-slider h-[61vh] max-sm:h-[50vh] sm:h-[55vh] md:h-[58vh] min-[1000px]:h-[71vh] min-[1200px]:h-[80vh] overflow-hidden relative rounded-3xl">
             <div className="relative w-full ">
                 {images.map((src, index) => (
                     <div
                         key={index}
-                        className={`slide w-full h-[80vh] absolute transition-all duration-[3s] ease-in-out ${
+                        className={`slide w-full  h-[71vh] min-[1200px]:h-[80vh] absolute transition-all duration-[3s] ease-in-out ${
                             currentSlide === index
                                 ? "opacity-100 z-8 transform translate-x-0 scale-100"
                                 : currentSlide === (index - 1 + images.length) % images.length
@@ -117,22 +117,29 @@ const TopSlider = () => {
 
                         <div
                             className="absolute grid grid-cols-12 gap-4 inset-0 text-white text-4xl p-4 bg-black/30 rounded-3xl ">
-                            <div className="sliderSectionOne col-span-6 relative left-[13%] my-auto">
-                                <p className="intro mb-2 text-3xl font-bold">
+                            <div
+                                className="sliderSectionOne max-sm:col-span-9 max-[1000px]:col-span-10 max-[1000px]:bottom-[10%] max-sm:bottom-[16%] col-span-6 relative left-[13%] my-auto px-5">
+                                <p className="intro mb-2 text-2xl sm:text-3xl lg:text-4xl min-[1900px]:text-6xl font-bold">
                                     {Details.sliderTopicsPart1[index]} <span>{Details.sliderTopicsPart2[index]}</span>
                                 </p>
-                                <h2 className="dynamic-txts-head mb-5 text-3xl font-bold">
+                                <h2 className="dynamic-txts-head mb-5 text-2xl sm:text-3xl lg:text-4xl min-[1900px]:mb-10 min-[1900px]:text-6xl font-bold">
                                     I'm <span className="dynamic-txts" ref={textRefs[index]}></span>
                                 </h2>
 
-                                <p className="para text-lg ">{Details.sliderPara[index]}</p><br/>
-                                <button id="introBtn1" className="introBtn bg-[#D2042D]"><span className="bg-[#D2042D]"></span>{Details.sliderButton1[index]}</button>
+                                <p className="para text-lg max-[768px]:hidden  min-[1900px]:mb-10">{Details.sliderPara1[index]}</p><br className="max-[768px]:hidden"/>
+                                <p className="para text-lg hidden max-[768px]:block max-[640px]:hidden">{Details.sliderPara2[index]}</p>
+                                <p className="para text-lg hidden max-[640px]:block">{Details.sliderPara3[index]}</p>
+                                <br className="hidden max-[768px]:block"/>
+
+                                <button id="introBtn1" className="introBtnNew bg-[#D2042D] w-[100px] h-[30px] md:w-[120px] md:h-[40px]"><span
+                                    className="bg-[#D2042D]"></span>{Details.sliderButton1[index]}</button>
                                 {index === 0 ? (
-                                <button id="introBtn2" className="introBtn bg-transparent ml-2"><span className="bg-[#D2042D]"></span>View Profile</button>
+                                    <button id="introBtn2" className="introBtnNew bg-transparent ml-2 w-[100px] h-[30px] md:w-[120px] md:h-[40px]"><span
+                                        className="bg-[#D2042D]"></span>View Profile</button>
                                 ) : ("")}
                             </div>
-                            <div className="sliderSectionTwo col-span-6 my-auto mx-[16%]">
-                                {index === 0 ? (
+                            <div className="sliderSectionTwo col-span-6 my-auto mx-[16%] max-[1000px]:hidden">
+                            {index === 0 ? (
                                     <div id={`headerImageId${index}`} className="headerImage"></div>
                                 ) :index === 1 ? (
                                     <div className="alternativeHeaderImage grid grid-cols-2 gap-y-2 ">
@@ -141,7 +148,7 @@ const TopSlider = () => {
                                                 key={idx}
                                                 src={image}
                                                 alt={`Skill ${idx + 1}`}
-                                                className="w-[150px] h-[100px] rounded bg-black/70 p-4"
+                                                className="w-[150px] h-[100px]  min-[1900px]:w-[200px] min-[1900px]:h-[130px] rounded bg-black/70 p-4"
                                             />
                                         ))}
                                         <a href="" className="text-base flex items-center text-white ml-2">
@@ -171,7 +178,7 @@ const TopSlider = () => {
                                                 key={idx}
                                                 src={image}
                                                 alt={`Skill ${idx + 1}`}
-                                                className="w-[150px] h-[80px] rounded bg-black/70 "
+                                                className="w-[150px] h-[80px] min-[1900px]:w-[200px] min-[1900px]:h-[130px] rounded bg-black/70 "
                                             />
                                         ))}
                                         <a href="" className="text-base flex items-center text-white ml-2">
