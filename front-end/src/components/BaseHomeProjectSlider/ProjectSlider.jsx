@@ -88,8 +88,8 @@ function ProjectSlider() {
     const classname = "transition-transform duration-[1000ms] ease-in-out hover:scale-[103%]";
 
     return (
-        <div className="ProectSlider relative w-[91%] mx-auto px-20 pb-10 lg:px-0">
-            <h1 className="text-center text-white text-5xl font-bold !my-20">My Projects</h1>
+        <div id="Projects" className="ProectSlider relative w-[91%] mx-auto px-4 sm:px-20 pb-10 lg:px-0 ">
+            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold sm:!my-20">My Projects</h1>
             <div className="overflow-hidden rounded-lg">
                 <div
                     className="flex"
@@ -101,7 +101,7 @@ function ProjectSlider() {
                     {projectList.map((item, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 min-[1900px]:w-1/5 min-[2500px]:w-1/6 flex justify-center items-center mt-10"
+                            className="flex-shrink-0  w-full md:w-1/2 lg:w-1/4 min-[1900px]:w-1/5 min-[2500px]:w-1/6 flex justify-center items-center mt-10"
                             onMouseEnter={stopAutoSlide}
                             onMouseLeave={startAutoSlide}
                         >

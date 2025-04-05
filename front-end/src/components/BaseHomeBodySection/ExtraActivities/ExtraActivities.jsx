@@ -16,7 +16,9 @@ const ExtraActivities = () => {
         setIsModalOpen(!isModalOpen);
     };
     return (
-        <div className="Extra-Activities w-[73%] mx-auto">
+        <div id="ExtraActivities" className="Extra-Activities w-[73%] mx-auto">
+            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !my-20">Extra
+                Curricular Activities</h1>
             <div id="accordion-flush" className="accordion">
                 {Details.ExtraCurricularActivities.map((item, index) => (
                     <div key={index} className="accordion-item">
@@ -28,7 +30,8 @@ const ExtraActivities = () => {
                                 aria-expanded={openIndex === index}
                                 aria-controls={`accordion-flush-body-${index}`}
                             >
-                                <span className={` ${openIndex === index ? 'text-black' : 'text-white'}`}>{item.title}</span>
+                                <span
+                                    className={` ${openIndex === index ? 'text-black' : 'text-white'}`}>{item.title}</span>
                                 <svg
                                     className={`w-3 h-3 transform ${openIndex === index ? 'text-black' : 'rotate-180 text-white'}`}
                                     aria-hidden="true"
@@ -54,7 +57,8 @@ const ExtraActivities = () => {
                             <div
                                 className="text-white text-lg text-justify m-10 py-5 h-[200px] border-b border-gray-200 dark:border-gray-700">
                                 {item.content}
-                                <button   onClick={toggleModal} id="introBtn1" className="introBtn bg-[#D2042D] mt-10" ><span
+                                <button onClick={toggleModal} id="introBtn1"
+                                        className="introBtn bg-[#D2042D] mt-10"><span
                                     className="bg-[#D2042D]"></span>View Gallery
                                 </button>
                             </div>

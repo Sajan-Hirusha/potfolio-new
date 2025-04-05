@@ -2,9 +2,9 @@ import Details from "../../../models/Details.jsx";
 
 function BaseHomeEducation(){
     return (
-        <div className="BaseHomeEducation bg-[#141414]  text-white py-12 px-6 md:px-12 lg:px-24">
+        <div id="Education" className="BaseHomeEducation bg-[#141414]  text-white py-12 px-6 md:px-12 lg:px-24">
             <h2 className="text-4xl font-bold mb-12 text-center relative">
-                <h1 className="text-center text-white text-5xl font-bold !mt-20 mb-10">Education</h1>
+                <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !mt-20 mb-10">Education</h1>
             </h2>
             <div className="space-y-8">
                 {Details.educationDetails.map((item, index) => (

@@ -45,12 +45,12 @@ const Header = () => {
 
                         {/* Desktop Menu */}
                         <div className="hidden md:flex md:items-center md:space-x-10">
-                            <a href="#" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Home</a>
-                            <a href="#" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">About</a>
-                            <a href="#" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Skills</a>
-                            <a href="#" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Education</a>
-                            <a href="#" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Projects</a>
-                            <a href="#" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Contacts</a>
+                            <a href="#Home" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Home</a>
+                            <a href="#AboutUs" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">About</a>
+                            <a href="#Skills" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Skills</a>
+                            <a href="#Education" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Education</a>
+                            <a href="#Projects" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Projects</a>
+                            <a href="#ContactUs" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Contacts</a>
                             <button
                                 type="button"
                                 onClick={toggleSideMenu}
@@ -72,7 +72,57 @@ const Header = () => {
 
                     {/* Mobile Menu */}
                     {isMobileMenuOpen && (
-                        <SideMenu isSideMenuOpen={isMobileMenuOpen} toggleSideMenu={toggleMobileMenu}/>
+                        <div className="fixed inset-0 z-10 bg-black bg-opacity-90">
+                            <div className="flex justify-end p-4">
+                                <button
+                                    type="button"
+                                    onClick={toggleMobileMenu}
+                                    className="inline-flex p-2 text-white transition-all duration-200 rounded-md focus:bg-gray-800 hover:bg-gray-800"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-6 h-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                            <nav className="flex flex-col items-center mt-10 space-y-4">
+                                <a href="#Home" onClick={toggleMobileMenu}
+                                   className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
+                                    Home
+                                </a>
+                                <a href="#AboutUs" onClick={toggleMobileMenu}
+                                   className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
+                                    About
+                                </a>
+                                <a href="#Skills" onClick={toggleMobileMenu}
+                                   className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
+                                    Skills
+                                </a>
+                                <a href="#Education" onClick={toggleMobileMenu}
+                                   className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
+                                    Education
+                                </a>
+                                <a href="#Projects" onClick={toggleMobileMenu}
+                                   className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
+                                    Projects
+                                </a>
+                                <a href="#ContactUs" onClick={toggleMobileMenu}
+                                   className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
+                                    Contact Us
+                                </a>
+                            </nav>
+
+                        </div>
                     )}
                 </div>
             </header>

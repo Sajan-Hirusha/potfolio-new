@@ -76,8 +76,8 @@ const BaseHomeSkillsSlider =()=>{
     const classname = "transition-transform duration-[1000ms] ease-in-out hover:scale-110";
 
     return (
-        <div className="relative w-[91%] mx-auto ">
-            <h1 className="text-center text-white text-5xl font-bold !my-20">My Skills</h1>
+        <div id="Skills" className="relative w-[91%] mx-auto ">
+            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !my-20">My Skills</h1>
             <div className="overflow-hidden rounded-lg">
                 <div
                     className="flex"

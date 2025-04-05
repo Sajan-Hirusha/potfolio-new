@@ -1,17 +1,5 @@
 import { useState } from "react";
 
-const styles = {
-    cardContainer: {
-        width: '220px',
-        height: '280px',
-        overflow: 'hidden',
-    },
-    imageContainer: {
-        width:'220px',
-        height:'200px',
-    },
-};
-
 function ProjectCard(props) {
     const [isHovered, setIsHovered] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +15,7 @@ function ProjectCard(props) {
     };
     return (
         <div
-            className={` bg-white itemCard shadow-md rounded-lg text-center relative mx-auto overflow-hidden w-[260px] lg:w-[220px] min-[1200px]:w-[260px] h-[280px] lg:h-[260px] min-[1200px]:h-[280px]`}
+            className={` bg-white itemCard shadow-md rounded-lg text-center relative mx-auto overflow-hidden w-[300px] h-[280px] sm:w-[260px] lg:w-[220px] min-[1200px]:w-[260px] lg:h-[260px] min-[1200px]:h-[280px]`}
 
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -41,7 +29,7 @@ function ProjectCard(props) {
                         {props.imageUrls.map((slide, index) => (
                             <div className="w-full flex-shrink-0" key={index}>
                                 <img
-                                    className={`${props.className} rounded - t - lg object-contain w-[260px] lg:w-[220px] min-[1200px]:w-[260px] h-[280px] lg:h-[260px] min-[1200px]:h-[280px]`}
+                                    className={`${props.className} rounded - t - lg object-contain w-[280px] h-[280px] sm:w-[260px] sm:h-[280px] lg:w-[220px] min-[1200px]:w-[260px] lg:h-[260px] min-[1200px]:h-[280px]`}
                                     src={slide}
                                     alt={`Slide ${index + 1}`}
                                 />
@@ -67,7 +55,7 @@ function ProjectCard(props) {
                 <img
                     src={props.imageUrl}
                     alt="productImage"
-                    className={`${props.className} w-[260px] lg:w-[220px] min-[1200px]:w-[260px] h-[200px] lg:h-[182px] min-[1200px]:h-[200px] overflow-hidden rounded-t-lg  object-contain`}
+                    className={`${props.className} w-[280px] sm:w-[260px] sm:lg:w-[220px] min-[1200px]:w-[260px] h-[200px] lg:h-[182px] min-[1200px]:h-[200px] overflow-hidden rounded-t-lg  object-contain`}
                 />
             )}
 
