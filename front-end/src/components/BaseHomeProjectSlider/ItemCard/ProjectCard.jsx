@@ -2,12 +2,12 @@ import { useState } from "react";
 
 const styles = {
     cardContainer: {
-        width: '260px',
+        width: '220px',
         height: '280px',
         overflow: 'hidden',
     },
     imageContainer: {
-        width:'260px',
+        width:'220px',
         height:'200px',
     },
 };
@@ -27,8 +27,8 @@ function ProjectCard(props) {
     };
     return (
         <div
-            className={`${props.className} bg-white itemCard shadow-md rounded-lg text-center relative mx-auto`}
-            style={styles.cardContainer}
+            className={` bg-white itemCard shadow-md rounded-lg text-center relative mx-auto overflow-hidden w-[260px] lg:w-[220px] min-[1200px]:w-[260px] h-[280px] lg:h-[260px] min-[1200px]:h-[280px]`}
+
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -41,10 +41,9 @@ function ProjectCard(props) {
                         {props.imageUrls.map((slide, index) => (
                             <div className="w-full flex-shrink-0" key={index}>
                                 <img
-                                    className="rounded-t-lg object-contain"
+                                    className={`${props.className} rounded - t - lg object-contain w-[260px] lg:w-[220px] min-[1200px]:w-[260px] h-[280px] lg:h-[260px] min-[1200px]:h-[280px]`}
                                     src={slide}
                                     alt={`Slide ${index + 1}`}
-                                    style={styles.imageContainer}
                                 />
                             </div>
                         ))}
@@ -68,8 +67,7 @@ function ProjectCard(props) {
                 <img
                     src={props.imageUrl}
                     alt="productImage"
-                    className="rounded-t-lg w-full object-contain"
-                    style={styles.imageContainer}
+                    className={`${props.className} w-[260px] lg:w-[220px] min-[1200px]:w-[260px] h-[200px] lg:h-[182px] min-[1200px]:h-[200px] overflow-hidden rounded-t-lg  object-contain`}
                 />
             )}
 

@@ -1,15 +1,15 @@
 import {useState, useEffect, useRef} from "react";
-import slider01 from '/assets/images/slider01.jpg';
-import slider02 from '/assets/images/slider02.jpg';
-import slider03 from '/assets/images/slider03.jpg';
-import skillsImage01 from '/assets/images/react.png';
-import skillsImage02 from '/assets/images/node.png';
-import skillsImage03 from '/assets/images/mongoDB.png';
-import skillsImage04 from '/assets/images/tailwindCsss.png';
-import projectImage01 from '/assets/images/project01.png';
-import projectImage02 from '/assets/images/project02.png';
-import projectImage03 from '/assets/images/project03.png';
-import projectImage04 from '/assets/images/project04.png';
+import slider01 from '../../assets/images/slider01.jpg';
+import slider02 from '../../assets/images/slider02.jpg';
+import slider03 from '../../assets/images/slider03.jpg';
+import skillsImage01 from '../../assets/images/reactHeader.png';
+import skillsImage02 from '../../assets/images/nodeHeader.png';
+import skillsImage03 from '../../assets/images/mongoDBHeader.png';
+import skillsImage04 from '../../assets/images/tailwindCsssHeader.png';
+import projectImage01 from '../../assets/images/project01.png';
+import projectImage02 from '../../assets/images/project02.png';
+import projectImage03 from '../../assets/images/project03.png';
+import projectImage04 from '../../assets/images/project04.png';
 import Details from '../../models/Details.jsx';
 import './TopSlider.css';
 import Typed from "typed.js";
@@ -94,12 +94,12 @@ const TopSlider = () => {
     }, []);
 
     return (
-        <div className="top-slider h-[71vh] overflow-hidden relative rounded-3xl">
+        <div className="top-slider h-[80vh] overflow-hidden relative rounded-3xl">
             <div className="relative w-full ">
                 {images.map((src, index) => (
                     <div
                         key={index}
-                        className={`slide w-full h-[71vh] absolute transition-all duration-[3s] ease-in-out ${
+                        className={`slide w-full h-[80vh] absolute transition-all duration-[3s] ease-in-out ${
                             currentSlide === index
                                 ? "opacity-100 z-8 transform translate-x-0 scale-100"
                                 : currentSlide === (index - 1 + images.length) % images.length

@@ -49,16 +49,16 @@ const Details = {
     ],
     skills: [
         {
-            coverImageLink:'/assets/images/mySql.png',
+            coverImageLink:'src/assets/images/mySql.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         },{
-            coverImageLink:'/assets/images/node.png',
+            coverImageLink:'src/assets/images/nodeHeader.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         },{
-            coverImageLink:'/assets/images/java.png' ,
+            coverImageLink:'src/assets/images/java.png' ,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         },{
-            coverImageLink:'/assets/images/tailwindCsss.png',
+            coverImageLink:'src/assets/images/tailwindCsssHeader.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }
     ],
@@ -66,37 +66,37 @@ const Details = {
         {
             projectName:'project1',
             coverImageLinks:[
-                '/assets/images/tailwindCsss.png',
-                '/assets/images/mySql.png',
-                '/assets/images/java.png',
-                '/assets/images/node.png',
+                'src/assets/images/tailwindCsssHeader.png',
+                'src/assets/images/mySql.png',
+                'src/assets/images/java.png',
+                'src/assets/images/nodeHeader.png',
             ] ,
             tags:['Industry','Grouped','individulas'],
         },{
             projectName:'project1',
             coverImageLinks:[
-            '/assets/images/tailwindCsss.png',
-                '/assets/images/mySql.png',
-                '/assets/images/java.png',
-                '/assets/images/node.png',
+                'src/assets/images/tailwindCsssHeader.png',
+                'src/assets/images/mySql.png',
+                'src/assets/images/java.png',
+                'src/assets/images/nodeHeader.png',
             ] ,
             tags: ['Industry','Grouped'],
         },{
             projectName:'project2',
             coverImageLinks:[
-                '/assets/images/tailwindCsss.png',
-                '/assets/images/mySql.png',
-                '/assets/images/java.png',
-                '/assets/images/node.png',
+                'src/assets/images/tailwindCsssHeader.png',
+                'src/assets/images/mySql.png',
+                'src/assets/images/java.png',
+                'src/assets/images/nodeHeader.png',
             ] ,
             tags: ['Industry','Grouped'],
         },{
             projectName:'project3',
             coverImageLinks:[
-                '/assets/images/tailwindCsss.png',
-                '/assets/images/mySql.png',
-                '/assets/images/java.png',
-                '/assets/images/node.png',
+                'src/assets/images/tailwindCsssHeader.png',
+                'src/assets/images/mySql.png',
+                'src/assets/images/java.png',
+                'src/assets/images/nodeHeader.png',
             ] ,
             tags: ['Industry','Grouped'],
         }
