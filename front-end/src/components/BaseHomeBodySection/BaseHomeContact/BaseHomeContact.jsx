@@ -5,7 +5,7 @@ const BaseHomeContact = () => {
         <div>
             <h1 className="text-center text-white text-5xl font-bold !mt-32 mb-16">Contact Me</h1>
             <div className="baseHome-contact grid grid-cols-12 gap-8 mb-20">
-                <div className="col-span-5 contact-left bg-[#191b1e] rounded-xl p-10 ml-10 ">
+                <div className="col-span-12 lg:col-span-5 contact-left bg-[#191b1e] rounded-xl p-5 xl:p-10 max-lg:mx-10 lg:ml-10 ">
                     <h1 id="myName" className="text-5xl text-white text-center !mb-16">I’m <span> Sajan Hirusha</span>
                     </h1>
                     <p className="contact-text text-lg text-white text-justify !mb-8">Phone : 0702789166
@@ -14,7 +14,7 @@ const BaseHomeContact = () => {
                         </a>
                     </p>
                     <p className="contact-text text-lg text-white text-justify !mb-8">Email: sajanhirusha@gmail.com
-                        <a href="mailto:sajanhirusha@gmail.com" className="ml-10">
+                        <a href="mailto:sajanhirusha@gmail.com" className="ml-5">
                             <button className="contactButton"><span></span>Mail Us</button>
                         </a>
                     </p>
@@ -25,24 +25,24 @@ const BaseHomeContact = () => {
                         id
                         in.</p>
                     <div className="buttonSet grid grid-cols-2 gap-y-4 w-[80%] mx-auto">
-                        <button className="ui circular facebook icon button !rounded w-[71%]">
+                        <button className="ui circular facebook icon button !rounded w-[80%] xl:w-[71%]">
                             <i className="facebook icon"></i>&nbsp; Facebook
                         </button>
-                        <button className="ui circular whatsapp icon button !rounded !bg-green-700 !text-white w-[71%]">
+                        <button className="ui circular whatsapp icon button !rounded !bg-green-700 !text-white w-[80%] xl:w-[71%]">
                             <i className="whatsapp icon "></i>&nbsp; whatsapp
                         </button>
-                        <button className="ui circular linkedin icon button !rounded w-[71%]">
+                        <button className="ui circular linkedin icon button !rounded w-[80%] xl:w-[71%]">
                             <i className="linkedin icon"></i>&nbsp;Linkdin
                         </button>
                         <button
-                            className="ui circular instagram icon button !rounded w-[71%]"
+                            className="ui circular instagram icon button !rounded w-[80%] xl:w-[71%]"
                         >
                             <i className="instagram icon"></i>&nbsp;Instagram
                         </button>
                     </div>
 
                 </div>
-                <div className="contact-right col-span-7 bg-[#191b1e] rounded-xl mr-10">
+                <div className="col-span-12 lg:col-span-7 contact-right bg-[#191b1e] rounded-xl max-lg:mx-10 lg:mr-10">
                     <p className="text-xl !mt-8 text-center text-[#D2042D]">Let’s Connect and Create Something
                         Extraordinary Together!</p>
                     <form action="" className="space-y-4 p-10 !my-4">
