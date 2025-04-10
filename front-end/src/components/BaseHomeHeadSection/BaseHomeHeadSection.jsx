@@ -13,9 +13,8 @@ const BaseHomeHeadSection =()=>{
             </div>
 
             <div
-                className="hidden md:grid homeIcon grid-cols-1 col-span-1 bg-[#141414] p-4 text-white pr-4 lg:pr-10 pt-10">
+                className="hidden md:grid homeIcon grid-cols-1 col-span-1 bg-[#141414] p-4 text-white pr-4 lg:pr-10 pt-20">
                 {[
-                    {icon: darkMode, alt: "darkMode", id: "darkMode"},
                     {icon: facebookLogo, alt: "facebook"},
                     {icon: whatsappLogo, alt: "whatsapp"},
                     {icon: linkdinLogo, alt: "linkdin"},

@@ -46,7 +46,7 @@ const Header = () => {
                         {/* Desktop Menu */}
                         <div className="hidden md:flex md:items-center md:space-x-10">
                             <a href="#Home" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Home</a>
-                            <a href="#AboutUs" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">About</a>
+                            <a href="#AboutUs01" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">About</a>
                             <a href="#Skills" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Skills</a>
                             <a href="#Education" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Education</a>
                             <a href="#Projects" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Projects</a>
@@ -100,7 +100,7 @@ const Header = () => {
                                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
                                     Home
                                 </a>
-                                <a href="#AboutUs" onClick={toggleMobileMenu}
+                                <a href="#AboutUs02" onClick={toggleMobileMenu}
                                    className="text-lg font-medium text-white transition-all duration-200 focus:text-opacity-70">
                                     About
                                 </a>

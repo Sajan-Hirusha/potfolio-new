@@ -10,9 +10,9 @@ const BaseHomeBodySection = () => {
 
     return (
         <div className="BaseHomeBodySection">
-            <BaseHomeAbout className="hidden max-1000:block" id={"AboutUsM"}/>
+            <BaseHomeAbout className="hidden max-[1000px]:block" id={"AboutUs02"}/>
             <BaseHomeSkillsSlider/>
-            <BaseHomeAbout className="max-1000:hidden" id={"AboutUs"} />
+            <BaseHomeAbout className="max-[1000px]:hidden" id={"AboutUs01"} />
             <BaseHomeEducation/>
             <ProjectSlider/>
             <ExtraActivities/>

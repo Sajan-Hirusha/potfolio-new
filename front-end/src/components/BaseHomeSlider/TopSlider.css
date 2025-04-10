@@ -44,7 +44,7 @@
     line-height: 1.6;
 }
 
-.top-slider .introBtnNew{
+.top-slider .introBtn{
 
     overflow: hidden;
     cursor: pointer;
@@ -53,7 +53,7 @@
     bottom: 20px;
     color:white;
 }
-.top-slider .introBtnNew span{
+.top-slider .introBtn span{
     width: 0;
     position: absolute;
     left: 0;
@@ -62,11 +62,11 @@
     transition: 1s;
 }
 
-.top-slider .introBtnNew:hover span {
+.top-slider .introBtn:hover span {
     width: 100%;
 }
 
-.top-slider .introBtnNew:hover{
+.top-slider .introBtn:hover{
     background: transparent !important;
 }
 
