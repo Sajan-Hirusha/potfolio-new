@@ -1,0 +1,45 @@
+.side-menu-body h3{
+    letter-spacing: 13px;
+    font-weight: 100 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.blinking-text {
+    animation: blink 2s infinite;
+}
+
+.service-tags-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.service-tags {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee-left-to-right 12s linear infinite;
+}
+
+@keyframes marquee-left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    90% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
