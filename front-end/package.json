@@ -1,5 +1,6 @@
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "home": "https://Sajan-Hirusha.github.io/potfolio-new",
   "name": "front-end",
   "private": true,
@@ -38,6 +39,8 @@
     "vite": "^6.0.5"
   }
 =======
+=======
+>>>>>>> Stashed changes
  "name": "front-end",
  "private": true,
  "version": "0.0.0",
@@ -74,5 +77,8 @@
   "tailwindcss": "^3.4.17",
   "vite": "^6.0.5"
  }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
