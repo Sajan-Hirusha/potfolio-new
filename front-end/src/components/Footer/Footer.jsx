@@ -1,6 +1,32 @@
+import { useState, useEffect } from 'react';
 import './Footer.css';
 
 const Footer = () => {
+    const [expandedSections, setExpandedSections] = useState([]);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        // Set initial value
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const toggleSection = (index) => {
+        if (!isMobile) return;
+
+        setExpandedSections(prev =>
+            prev.includes(index)
+                ? prev.filter(i => i !== index)
+                : [...prev, index]
+        );
+    };
+
     const sections = [
         {
             title: "Company",
@@ -31,28 +57,51 @@ const Footer = () => {
 
     return (
         <div className="py-10 bg-black sm:pt-16 lg:pt-24">
-            <div className="px-4 mx-auto sm:px-6 lg:px-40 max-w-full ">
-                <div className="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12 max-[400px]:ml-5 ml-20 md:ml-10 lg:ml-20">
+            <div className="px-4 mx-auto sm:px-6 lg:px-40 max-w-full">
+                {/* Box-style sections */}
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-6">
                     {sections.map((section, index) => (
-                        <div key={index}>
-                            <p className="text-lg underline text-[#D2042D]">{section.title}</p>
-                            <ul className="mt-8 space-y-4">
-                                {section.links.map((link, i) => (
-                                    <li key={i}>
-                                        <a href="#" className="text-base text-white hover:text-opacity-80">
-                                            {link}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
+                        <div
+                            key={index}
+                            className={`max-md:bg-gray-700/30  rounded-lg p-4 transition-all duration-300 ${isMobile ? 'cursor-pointer' : ''} ${expandedSections.includes(index) ? 'md:shadow-lg shadow-[#D2042D]/50' : ''}`}
+                            onClick={() => toggleSection(index)}
+                        >
+                            <div className="flex items-center justify-between">
+                                <h3 className="text-lg font-medium text-white">{section.title}</h3>
+                                {isMobile && (
+                                    <svg
+                                        className={`w-5 h-5 text-white transform transition-transform duration-300 ${expandedSections.includes(index) ? 'rotate-180' : ''}`}
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                )}
+                            </div>
+
+                            <div className={`${isMobile ? (expandedSections.includes(index) ? 'max-h-96 mt-4' : 'max-h-0') : 'max-h-96'} overflow-hidden transition-all duration-300`}>
+                                <ul className="space-y-3">
+                                    {section.links.map((link, i) => (
+                                        <li key={i}>
+                                            <a
+                                                href="#"
+                                                className="block py-1 text-white hover:text-[#D2042D] transition-colors duration-200"
+                                            >
+                                                {link}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     ))}
                 </div>
 
                 <hr className="mt-16 mb-10 border-gray-800" />
 
-                <div className="flex flex-wrap items-center justify-between px-2 sm:px-5">
-                    <p className="text-white">&copy; Developed by Sajan Hirusha</p>
+                <div className="flex flex-col items-center justify-between px-2 space-y-6 sm:space-y-0 sm:flex-row sm:px-5">
+                    <p className="text-white text-center sm:text-left">&copy; Developed by Sajan Hirusha</p>
                     <ul className="flex items-center space-x-3">
                         {socialIcons.map((social, index) => (
                             <li key={index}>
@@ -61,9 +110,9 @@ const Footer = () => {
                                     className="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-[#D2042D] hover:bg-[#D2042D]/30 hover:border-[#D2042D] focus:border-[#D2042D]"
                                 >
                                     {index !== 2 && (
-                                    <svg className="w-4 h-4" viewBox="0 0 20 24" fill="currentColor">
-                                        <path d={social.path}/>
-                                    </svg>
+                                        <svg className="w-4 h-4" viewBox="0 0 20 24" fill="currentColor">
+                                            <path d={social.path}/>
+                                        </svg>
                                     )}
 
                                     {index === 2 && (
@@ -82,7 +131,6 @@ const Footer = () => {
                             </li>
                         ))}
                     </ul>
-
                 </div>
             </div>
         </div>
