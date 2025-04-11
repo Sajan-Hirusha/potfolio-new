@@ -1,3 +1,7 @@
+import tailwindConfig from "../assets/images/tailwindCsssHeader.png"
+import mysql from "../assets/images/mySql.png"
+import java from "../assets/images/java.png"
+import node from "../assets/images/nodeHeader.png"
 
 const Details = {
     name: 'Sabari Holdings',
@@ -6,17 +10,17 @@ const Details = {
     social: {
         faceBook: 'https://www.facebook.com/masimpex1?mibextid=ZbWKwL'
     },
-    sliderTopicsPart1 : [
+    sliderTopicsPart1: [
         "Hi, I’m ",
         "Discover ",
         "Discover "
     ],
-    sliderTopicsPart2 : [
+    sliderTopicsPart2: [
         "Sajan Hirusha",
         "My Projects",
         "My Skills"
     ],
-    sliderPara1 : [
+    sliderPara1: [
         "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and\n" +
         "developer with 2 years of experience. My main target is to provide a good service to my buyers.\n" +
         "Please message me with your requests.",
@@ -27,7 +31,7 @@ const Details = {
         "Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer\n" +
         "took a galley of type",
     ],
-    sliderPara2 : [
+    sliderPara2: [
         "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and" +
         "developer with 2 years of experience.",
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\n" +
@@ -35,24 +39,24 @@ const Details = {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\n" +
         "Ipsum has been the industry's standard dummy text ever since the 1500s,",
     ],
-    sliderPara3 : [
+    sliderPara3: [
         "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem" ,
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem"
     ],
-    sliderButton1 : [
-       "Contact Me",
+    sliderButton1: [
+        "Contact Me",
         "View Profile",
         "View Profile",
     ],
-    sliderButton2 : [
+    sliderButton2: [
         "View Profile",
         "",
         "",
     ],
     about: [
         {
-            title:"Visit My Portfolio And Hire Me",
+            title: "Visit My Portfolio And Hire Me",
             para: "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and developer with 2 years " +
                 "of experience. My main target is to provide a good service to my buyers. Please message me with your requests.",
 
@@ -62,59 +66,59 @@ const Details = {
     ],
     skills: [
         {
-            coverImageLink:'src/assets/images/mySql.png',
+            coverImageLink: tailwindConfig,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        },{
-            coverImageLink:'src/assets/images/nodeHeader.png',
+        }, {
+            coverImageLink: mysql,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        },{
-            coverImageLink:'src/assets/images/java.png' ,
+        }, {
+            coverImageLink: java,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        },{
-            coverImageLink:'src/assets/images/tailwindCsssHeader.png',
+        }, {
+            coverImageLink: node,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }
     ],
     projects: [
         {
-            projectName:'project1',
-            coverImageLinks:[
-                'src/assets/images/tailwindCsssHeader.png',
-                'src/assets/images/mySql.png',
-                'src/assets/images/java.png',
-                'src/assets/images/nodeHeader.png',
-            ] ,
-            tags:['Industry','Grouped','individulas'],
-        },{
-            projectName:'project1',
-            coverImageLinks:[
-                'src/assets/images/tailwindCsssHeader.png',
-                'src/assets/images/mySql.png',
-                'src/assets/images/java.png',
-                'src/assets/images/nodeHeader.png',
-            ] ,
-            tags: ['Industry','Grouped'],
-        },{
-            projectName:'project2',
-            coverImageLinks:[
-                'src/assets/images/tailwindCsssHeader.png',
-                'src/assets/images/mySql.png',
-                'src/assets/images/java.png',
-                'src/assets/images/nodeHeader.png',
-            ] ,
-            tags: ['Industry','Grouped'],
-        },{
-            projectName:'project3',
-            coverImageLinks:[
-                'src/assets/images/tailwindCsssHeader.png',
-                'src/assets/images/mySql.png',
-                'src/assets/images/java.png',
-                'src/assets/images/nodeHeader.png',
-            ] ,
-            tags: ['Industry','Grouped'],
+            projectName: 'project1',
+            coverImageLinks: [
+                tailwindConfig,
+                mysql,
+                java,
+                node,
+            ],
+            tags: ['Industry', 'Grouped', 'individulas'],
+        }, {
+            projectName: 'project1',
+            coverImageLinks: [
+                tailwindConfig,
+                mysql,
+                java,
+                node,
+            ],
+            tags: ['Industry', 'Grouped'],
+        }, {
+            projectName: 'project2',
+            coverImageLinks: [
+                tailwindConfig,
+                mysql,
+                java,
+                node,
+            ],
+            tags: ['Industry', 'Grouped'],
+        }, {
+            projectName: 'project3',
+            coverImageLinks: [
+                tailwindConfig,
+                mysql,
+                java,
+                node,
+            ],
+            tags: ['Industry', 'Grouped'],
         }
     ],
-    educationDetails : [
+    educationDetails: [
         {
             degree: 'Bachelor of Science in Computer Science & Technology',
             institution: 'Uva Wellassa University',
@@ -133,7 +137,7 @@ const Details = {
             ],
         }
     ],
-    ExtraCurricularActivities:[{
+    ExtraCurricularActivities: [{
         title: "IEEE OpenDay",
         content: (
             <>

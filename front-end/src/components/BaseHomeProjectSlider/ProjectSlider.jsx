@@ -118,7 +118,7 @@ function ProjectSlider() {
                 </div>
             </div>
 
-            <div className="absolute top-[61%] left-[0] md:left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-1/2 sm:top-[61%] left-[0] md:left-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToPrevious}
                     className="bg-white bg-opacity-25 p-2 rounded-full"
@@ -126,7 +126,7 @@ function ProjectSlider() {
                     &#8592;
                 </button>
             </div>
-            <div className="absolute top-[61%] right-[0] md:right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
+            <div className="absolute top-1/2 sm:top-[61%] right-[0] md:right-[-20px] transform -translate-y-1/2 text-white cursor-pointer ">
                 <button
                     onClick={goToNext}
                     className="bg-white bg-opacity-25 p-2 rounded-full"

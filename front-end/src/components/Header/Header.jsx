@@ -17,12 +17,29 @@ const Header = () => {
     return (
         <div className="Header mb-32">
             <header className="fixed top-0 left-0 right-0 bg-black border-b border-gray-700 z-50">
-                <div className="px-10 mx-auto max-w-full sm:px-6 lg:px-20 py-2">
+                <div className=" mx-auto max-w-full sm:px-6 lg:px-20 py-2">
                     <nav className="flex items-center justify-between h-16 lg:h-20">
-                        <div className="flex-shrink-0">
-                            <a href="#" title="" className="flex text-xs text-white items-center justify-center tracking-extra">
+                        {/* Hamburger Button */}
+                        <button
+                            type="button"
+                            onClick={toggleMobileMenu}
+                            className="ml-2 navbar-toggler inline-flex p-2 text-white transition-all duration-200 rounded-md md:hidden focus:bg-gray-800 hover:bg-gray-800"
+                        >
+                            <svg className="icon headerIcon" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                                <rect className="line line1" x="1" y="4" width="18" height="2" rx="1"/>
+                                <rect className="line line2" x="1" y="12" width="20" height="2" rx="1"/>
+                                <rect className="line line3" x="1" y="20" width="22" height="2" rx="1"/>
+                            </svg>
+                        </button>
+
+                        <div className="flex-shrink-0 ml-7">
+                            <a
+                                href="#"
+                                title=""
+                                className="flex flex-row-reverse md:flex-row text-xs text-white items-center justify-center tracking-extra"
+                            >
                                 <img
-                                    className="w-auto h-16 rounded-full mr-5"
+                                    className="w-auto h-14 sm:h-16 rounded-full md:ml-5 ml-2 mr-4"
                                     src={sajanImg}
                                     alt="Logo"
                                 />
@@ -30,33 +47,28 @@ const Header = () => {
                             </a>
                         </div>
 
-                        {/* Hamburger Button */}
-                        <button
-                            type="button"
-                            onClick={toggleMobileMenu}
-                            className="navbar-toggler inline-flex p-2 text-white transition-all duration-200 rounded-md md:hidden focus:bg-gray-800 hover:bg-gray-800"
-                        >
-                            <svg className="icon headerIcon" width="20" height="20" fill="white" viewBox="0 0 24 24">
-                                <rect className="line line1" x="5" y="4" width="18" height="2" rx="1"/>
-                                <rect className="line line2" x="3" y="12" width="20" height="2" rx="1"/>
-                                <rect className="line line3" x="1" y="20" width="22" height="2" rx="1"/>
-                            </svg>
-                        </button>
 
                         {/* Desktop Menu */}
                         <div className="hidden md:flex md:items-center md:space-x-10">
-                            <a href="#Home" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Home</a>
-                            <a href="#AboutUs01" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">About</a>
-                            <a href="#Skills" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Skills</a>
-                            <a href="#Education" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Education</a>
-                            <a href="#Projects" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Projects</a>
-                            <a href="#ContactUs" className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Contacts</a>
+                            <a href="#Home"
+                               className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Home</a>
+                            <a href="#AboutUs01"
+                               className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">About</a>
+                            <a href="#Skills"
+                               className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Skills</a>
+                            <a href="#Education"
+                               className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Education</a>
+                            <a href="#Projects"
+                               className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Projects</a>
+                            <a href="#ContactUs"
+                               className="text-sm font-medium text-white transition-all duration-200 2xl:text-base hover:text-opacity-70 focus:text-opacity-70">Contacts</a>
                             <button
                                 type="button"
                                 onClick={toggleSideMenu}
                                 className="navbar-toggler inline-flex p-2 text-white transition-all duration-200 rounded-md focus:bg-gray-800 hover:bg-gray-950"
                             >
-                                <svg className="icon headerIcon" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                                <svg className="icon headerIcon" width="20" height="20" fill="white"
+                                     viewBox="0 0 24 24">
                                     <rect className="line line1" x="5" y="4" width="18" height="2" rx="1"/>
                                     <rect className="line line2" x="3" y="12" width="20" height="2" rx="1"/>
                                     <rect className="line line3" x="1" y="20" width="22" height="2" rx="1"/>
@@ -73,7 +85,7 @@ const Header = () => {
                     {/* Mobile Menu */}
                     {isMobileMenuOpen && (
                         <div className="fixed inset-0 z-10 bg-black bg-opacity-90">
-                            <div className="flex justify-end p-4">
+                        <div className="flex justify-end p-4">
                                 <button
                                     type="button"
                                     onClick={toggleMobileMenu}

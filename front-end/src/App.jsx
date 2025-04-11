@@ -1,15 +1,14 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BaseHome from "./screens/BaseHome/BaseHome.jsx";
 
 function App() {
-
-  return (
-      <BrowserRouter>
-          <Routes>
-              <Route element={<BaseHome/>} path='/'/>
-          </Routes>
-      </BrowserRouter>
-  )
+    return (
+        <BrowserRouter basename="/potfolio-new">
+            <Routes>
+                <Route path="/" element={<BaseHome />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
