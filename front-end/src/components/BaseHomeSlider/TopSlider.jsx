@@ -131,10 +131,10 @@ const TopSlider = () => {
                                 <p className="para text-[13px] sm:text-base md:text-md min-[1900px]:text-2xl  hidden max-[640px]:block">{Details.sliderPara3[index]}</p>
                                 <br className="hidden max-[768px]:block"/>
 
-                                <button id="introBtn1" className="introBtn bg-[#D2042D] text-[13px] sm:text-base md:text-md min-[1900px]:text-lg w-[76px] h-[35px] min-[430px]:w-[100px] md:w-[120px] md:h-[40px]"><span
+                                <button id="introBtn1" className="introBtn bg-[#D2042D] !text-[13px] sm:text-base md:text-md min-[1900px]:text-lg !w-[91px] !h-[34px] min-[430px]:w-[100px] md:w-[120px] md:h-[40px]"><span
                                     className="bg-[#D2042D]"></span>{Details.sliderButton1[index]}</button>
                                 {index === 0 ? (
-                                    <button id="introBtn2" className="introBtn bg-transparent text-[13px] sm:text-base md:text-md min-[1900px]:text-lg  ml-2 w-[100px] h-[35px] md:w-[120px] md:h-[40px]"><span
+                                    <button id="introBtn2" className="introBtn bg-transparent !text-[13px] sm:text-base md:text-md min-[1900px]:text-lg  ml-2 !w-[91px] !h-[34px] md:w-[120px] md:h-[40px]"><span
                                         className="bg-[#D2042D]"></span>View Profile</button>
                                 ) : ("")}
                             </div>

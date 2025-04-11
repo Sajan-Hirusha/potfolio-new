@@ -51,7 +51,7 @@ const Footer = () => {
 
                 <hr className="mt-16 mb-10 border-gray-800" />
 
-                <div className="flex flex-wrap items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between px-2 sm:px-5">
                     <p className="text-white">&copy; Developed by Sajan Hirusha</p>
                     <ul className="flex items-center space-x-3">
                         {socialIcons.map((social, index) => (

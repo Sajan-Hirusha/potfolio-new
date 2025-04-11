@@ -38,7 +38,6 @@
 
 
 .baseHome-contact #myName {
-    font-family: 'Serif';
     font-weight: 700;
 }
 .baseHome-contact #myName span {
@@ -46,11 +45,8 @@
 }
 
 .baseHome-contact .contactButton {
-    width: 91px;
-    height: 34px;
     background-color: #D2042D;
     border-radius: 10px;
-    font: 500 13px "sans-serif";
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
