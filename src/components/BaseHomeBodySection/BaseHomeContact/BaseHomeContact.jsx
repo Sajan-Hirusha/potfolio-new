@@ -113,7 +113,7 @@ const BaseHomeContact = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="contactSubmit w-full bg-gradient-to-b from-blue-950 to-[#021a2d] dark:border-[#252d32] rounded-md bg-[#232a2f] p-4  text-white shadow-sm hover:bg-gray-700 mt-8"
+                                className="contactSubmit w-full bg-gradient-to-b from-blue-950 to-[#021a2d] dark:border-[#252d32] rounded-md dark:bg-[#232a2f] p-4  text-white shadow-sm hover:bg-gray-700 mt-8"
                             >
                                 SEND MESSAGE
                             </button>

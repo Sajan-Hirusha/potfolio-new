@@ -123,7 +123,7 @@ const TopSlider = () => {
 
     const currentImages = isDarkMode ? images : lightModeImages;
     return (
-        <div className="top-slider h-[61vh]  sm:h-[55vh] md:h-[58vh] min-[1000px]:h-[71vh] min-[1200px]:h-[82vh] overflow-hidden relative rounded-3xl">
+        <div className="top-slider max-md:mt-10 h-[61vh] sm:h-[55vh] md:h-[58vh] min-[1000px]:h-[71vh] min-[1200px]:h-[82vh] overflow-hidden relative rounded-3xl">
             <div className="relative w-full ">
                 {currentImages.map((src, index) => (
                     <div

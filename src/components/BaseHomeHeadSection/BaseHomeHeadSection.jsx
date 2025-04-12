@@ -8,42 +8,16 @@ import lightModeLinkdinLogo from "../../assets/icons/lightModelinkedin.png";
 import lightModeFacebook from "../../assets/icons/lightModeFacebook.png";
 import lightModeWhatsapp from "../../assets/icons/lightModeWhatsapp.png";
 import lightModeGitHub from "../../assets/icons/lightModeGithub.png";
-
 import gitLogo from "../../assets/icons/github.png";
 import TopSlider from "../BaseHomeSlider/TopSlider.jsx";
 
 const BaseHomeHeadSection = () => {
 
     const [darkMode, setDarkMode] = useState(() => {
-        return localStorage.getItem("theme") === "dark";
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === null) return true;
+        return savedTheme === "dark";
     });
-
-    useEffect(() => {
-        const themeToggle = document.getElementById('theme-toggle');
-        if (!themeToggle) return; // Early return if element not found
-
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
-            document.documentElement.classList.add('dark');
-            themeToggle.checked = true;
-        }
-
-        themeToggle.addEventListener('change', function() {
-            if (this.checked) {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            }
-        });
-
-        return () => {
-            themeToggle.removeEventListener('change'); // Cleanup
-        };
-    }, []);
 
     useEffect(() => {
         const html = document.documentElement;
@@ -55,6 +29,7 @@ const BaseHomeHeadSection = () => {
             localStorage.setItem("theme", "light");
         }
     }, [darkMode]);
+
     const DarkModeIcons = [
         {
             icon: darkMode ? lightMode : darkModeBtn,
@@ -77,9 +52,7 @@ const BaseHomeHeadSection = () => {
         {icon: lightModeGitHub, alt: "github"}
     ]
 
-    const [isDarkMode, setIsDarkMode] = useState(() =>
-        document.documentElement.classList.contains('dark')
-    );
+    const [isDarkMode, setIsDarkMode] = useState(darkMode);
     const currentImagesRef = useRef(isDarkMode ? DarkModeIcons : lightModeIcons);
 
     // Dark mode detection
@@ -106,6 +79,12 @@ const BaseHomeHeadSection = () => {
     }, [isDarkMode]);
 
     const currentIcons = isDarkMode ? DarkModeIcons : lightModeIcons;
+
+    // Toggle handler for mobile switch
+    const handleToggleChange = (e) => {
+        setDarkMode(e.target.checked);
+    };
+
     return (
         <div
             id="Home"
@@ -113,13 +92,18 @@ const BaseHomeHeadSection = () => {
         >
             <div
                 className="col-span-12 md:col-span-11 text-white md:pl-10 md:pr-0 dark:md:pl-20 dark:md:pr-10 mx-4 md:!mx-10 dark:md:my-2">
-                <label className="relative mb-4 md:hidden left-[82%] inline-flex items-center cursor-pointer">
-                    <input type="checkbox" id="theme-toggle" className="sr-only peer"/>
+                <label className="absolute right-7 z-[1000] md:hidden inline-flex items-center cursor-pointer">
+                    <input
+                        type="checkbox"
+                        id="theme-toggle"
+                        className="sr-only peer"
+                        checked={darkMode}
+                        onChange={handleToggleChange}
+                    />
                     <div
                         className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
                     <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        <span className="dark:hidden">Light</span>
-                        <span className="hidden dark:inline">Dark</span>
+                        {darkMode ? 'Dark' : 'Light'}
                     </span>
                 </label>
                 <TopSlider/>
@@ -139,7 +123,6 @@ const BaseHomeHeadSection = () => {
                         {index < 4 && <br/>}
                     </a>
                 ))}
-
             </div>
         </div>
     );
