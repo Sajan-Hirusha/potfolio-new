@@ -84,17 +84,17 @@ const BaseHomeHeadSection = () => {
             id="Home"
             className="BaseHomeHeadSection grid grid-cols-12 gap-2 mt-8"
         >
-            <div className="col-span-12 md:col-span-11 text-white md:pl-20 md:pr-10 mx-4 md:!mx-10 md:my-2">
+            <div className="col-span-12 md:col-span-11 text-white md:pl-10 md:pr-0 dark:md:pl-20 dark:md:pr-10 mx-4 md:!mx-10 dark:md:my-2">
                 <TopSlider />
             </div>
 
             <div
-                className="hidden md:grid homeIcon grid-cols-1 col-span-1 p-4 text-gray-900 dark:text-white pr-4 lg:pr-10 pt-20"
+                className="hidden md:grid homeIcon grid-cols-1 col-span-1 p-4 text-gray-900 dark:text-white pr-4 lg:pr-10 pt-10"
             >
                 {currentIcons.map((item, index) => (
                     <a href="#" key={index} className="cursor-pointer">
                         <img
-                            className="w-10 h-8 lg:w-10 lg:h-10 mx-auto"
+                            className="w-10 h-8 lg:w-14 lg:h-14 dark:lg:w-10 dark:lg:h-10 mx-auto"
                             src={item.icon}
                             alt={item.alt}
                             onClick={item.alt === "darkmode" ? () => setDarkMode(prev => !prev) : undefined}

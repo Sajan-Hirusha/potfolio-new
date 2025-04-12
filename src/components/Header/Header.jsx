@@ -84,7 +84,7 @@ const Header = () => {
 
                     {/* Mobile Menu */}
                     {isMobileMenuOpen && (
-                        <div className="fixed inset-0 z-10 bg-black bg-opacity-90">
+                        <div className="fixed inset-0 z-10 bg-[#021a2d] dark:bg-black bg-opacity-90">
                         <div className="flex justify-end p-4">
                                 <button
                                     type="button"

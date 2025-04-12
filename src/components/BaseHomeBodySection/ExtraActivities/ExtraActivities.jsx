@@ -16,7 +16,7 @@ const ExtraActivities = () => {
 
     return (
         <div id="ExtraActivities" className="w-full px-4 sm:px-6 md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 mx-auto py-10">
-            <h1 className="text-center text-black dark:text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold my-10 md:my-16 lg:my-20">
+            <h1 className="text-center text-black dark:text-white text-4xl md:text-5xl min-[1900px]:text-6xl mb-10 font-bold mt-10 md:mt-16 lg:mt-20">
                 Extra Curricular Activities
             </h1>
 
