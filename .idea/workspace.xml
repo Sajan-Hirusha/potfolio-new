@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84b4367e-60fc-4494-9245-f0c28ea511c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,19 +20,22 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JSX File" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2vcSMHMxbVJEwTElmvOoYhQH3dO" />
+  <component name="ProjectId" id="2rO8NbLJIWCdlJYLNQgbUph61cy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,25 +59,30 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\potfolio-new\front-end\src\assets\images" />
+      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets\images" />
+      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets\images" />
+      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\src\components\BaseHomeBodySection" />
     </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="potfolio-new" />
+      <module name="front-end" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="potfolio-new" />
+      <module name="front-end" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="potfolio-new" />
+      <module name="front-end" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,7 +105,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Python.FlaskServer">
-      <module name="potfolio-new" />
+      <module name="front-end" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +119,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="potfolio-new" />
+      <module name="front-end" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,7 +132,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="potfolio-new" />
+      <module name="front-end" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,7 +149,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="potfolio-new" />
+      <module name="front-end" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,15 +177,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="84b4367e-60fc-4494-9245-f0c28ea511c1" name="Changes" comment="" />
-      <created>1744442820219</created>
+      <changelist id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="" />
+      <created>1736418723712</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1744442820219</updated>
-      <workItem from="1744442821350" duration="3737000" />
-      <workItem from="1744451022648" duration="8000" />
-      <workItem from="1744451041916" duration="31000" />
-      <workItem from="1744451083796" duration="16000" />
+      <updated>1736418723712</updated>
+      <workItem from="1736418724812" duration="39137000" />
+      <workItem from="1736659918160" duration="473000" />
+      <workItem from="1736692002789" duration="575000" />
+      <workItem from="1737024821574" duration="1742000" />
+      <workItem from="1737366241829" duration="266000" />
+      <workItem from="1743617473318" duration="145000" />
+      <workItem from="1744451416579" duration="34000" />
     </task>
     <servers />
   </component>
