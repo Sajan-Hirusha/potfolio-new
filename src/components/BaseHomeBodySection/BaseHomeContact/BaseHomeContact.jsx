@@ -10,12 +10,12 @@ const BaseHomeContact = () => {
                     </h1>
                     <p className="contact-text  text-white text-justify !mb-8">Phone : 0702789166
                         <a href="tel:+94702789166" className="ml-2">
-                            <button className="contactButton w-[67px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg"><span></span>Call Us</button>
+                            <button className="contactButton w-[61px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg"><span></span>Call Us</button>
                         </a>
                     </p>
                     <p className="contact-text text-white text-justify !mb-8">Email: sajanhirusha@gmail.com
                         <a href="mailto:sajanhirusha@gmail.com" className="ml-2">
-                            <button className="contactButton w-[67px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg"><span></span>Mail Us</button>
+                            <button className="contactButton w-[61px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg"><span></span>Mail Us</button>
                         </a>
                     </p>
                     <p className="contact-text text-[13px] sm:text-base md:text-md min-[1900px]:text-xl text-[#c4cfde]  text-justify !mb-14">&emsp;&emsp;&emsp; Lorem
@@ -113,7 +113,7 @@ const BaseHomeContact = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="contactSubmit w-full bg-gradient-to-b from-blue-950 to-[#021a2d] dark:border-[#252d32] rounded-md dark:bg-[#232a2f] p-4  text-white shadow-sm hover:bg-gray-700 mt-8"
+                                className="w-full bg-gradient-to-b from-blue-950 to-[#021a2d] dark:bg-[#232a2f] dark:bg-none border-[#252d32] rounded-md p-4 text-white shadow-sm hover:bg-gray-700 mt-8"
                             >
                                 SEND MESSAGE
                             </button>
