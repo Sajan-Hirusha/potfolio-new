@@ -57,7 +57,8 @@ const Footer = () => {
 
     return (
         <div
-            className="footer py-10 bg-gradient-to-b from-[#021a2d] via-[#021a2d] to-gray-950 sm:pt-16 lg:pt-24">
+            className="footer py-10 bg-gradient-to-b from-[#021a2d] via-[#021a2d] to-gray-950 dark:bg-black dark:bg-none sm:pt-16 lg:pt-24">
+
             <div className="px-4 mx-auto sm:px-6 lg:px-40 max-w-full">
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-6">
                     {sections.map((section, index) => (

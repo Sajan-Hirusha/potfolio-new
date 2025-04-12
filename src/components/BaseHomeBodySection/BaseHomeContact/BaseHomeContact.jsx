@@ -8,14 +8,19 @@ const BaseHomeContact = () => {
                 <div className="col-span-12 lg:col-span-5 contact-left bg-[#021a2d] dark:bg-[#191b1e] rounded-xl p-5 max-sm:mx-4 xl:p-10 max-lg:mx-10 lg:ml-10 ">
                     <h1 id="myName" className="text-2xl sm:text-3xl lg:text-4xl min-[1900px]:text-6xl text-white text-center !mb-16">I’m <span> Sajan Hirusha</span>
                     </h1>
-                    <p className="contact-text  text-white text-justify !mb-8">Phone : 0702789166
-                        <a href="tel:+94702789166" className="ml-2">
-                            <button className="contactButton w-[67px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg"><span></span>Call Us</button>
+                    <p className="contact-text  text-white text-justify !mb-8"><i className="fas fa-phone w-5 h-2"></i> Phone :
+                        0702789166
+                        <a href="tel:+94702789166" className="ml-5">
+                            <button className="contactButton max-[400px]:hidden w-[67px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg"><span></span>Call Us</button>
                         </a>
                     </p>
-                    <p className="contact-text text-white text-justify !mb-8">Email: sajanhirusha@gmail.com
-                        <a href="mailto:sajanhirusha@gmail.com" className="ml-2">
-                            <button className="contactButton w-[67px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg"><span></span>Mail Us</button>
+                    <p className="contact-text text-white text-justify !mb-8"><i className="fas fa-envelope w-5 h-2"></i> Email:
+                        sajanhirusha@gmail.com
+                        <a href="mailto:sajanhirusha@gmail.com" className="ml-5">
+                            <button
+                                className="contactButton max-[400px]:hidden w-[67px] h-[31px] min-[430px]:!w-[91px] min-[430px]:h-[34px] text-[13px] sm:text-base min-2xl:text-lg">
+                                <span></span>Mail Us
+                            </button>
                         </a>
                     </p>
                     <p className="contact-text text-[13px] sm:text-base md:text-md min-[1900px]:text-xl text-[#c4cfde]  text-justify !mb-14">&emsp;&emsp;&emsp; Lorem
@@ -113,7 +118,7 @@ const BaseHomeContact = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="contactSubmit w-full bg-gradient-to-b from-blue-950 to-[#021a2d] dark:border-[#252d32] rounded-md bg-[#232a2f] p-4  text-white shadow-sm hover:bg-gray-700 mt-8"
+                                className="w-full bg-gradient-to-b from-blue-950 to-[#021a2d] dark:bg-[#232a2f] dark:bg-none border-[#252d32] rounded-md p-4 text-white shadow-sm hover:bg-gray-700 mt-8"
                             >
                                 SEND MESSAGE
                             </button>
