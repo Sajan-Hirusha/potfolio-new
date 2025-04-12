@@ -16,6 +16,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeSkillsSlider/ItemCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeSkillsSlider/ItemCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BaseHomeSlider/TopSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeSlider/TopSlider.jsx" afterDir="false" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,6 +199,10 @@
       <workItem from="1743617473318" duration="145000" />
       <workItem from="1744451416579" duration="34000" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      <workItem from="1744451740788" duration="11059000" />
+>>>>>>> Stashed changes
 =======
       <workItem from="1744451740788" duration="11059000" />
 >>>>>>> Stashed changes
