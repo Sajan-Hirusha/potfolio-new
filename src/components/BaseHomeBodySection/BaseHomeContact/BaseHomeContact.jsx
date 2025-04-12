@@ -3,7 +3,7 @@ import './BaseHomeContact.css'
 const BaseHomeContact = () => {
     return (
         <div id="ContactUs">
-            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold mb-16">Contact Me</h1>
+            <h1 className="text-center text-black dark:text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold mb-16">Contact Me</h1>
             <div className="baseHome-contact grid grid-cols-12 gap-8 mb-20">
                 <div className="col-span-12 lg:col-span-5 contact-left bg-[#191b1e] rounded-xl p-5 max-sm:mx-4 xl:p-10 max-lg:mx-10 lg:ml-10 ">
                     <h1 id="myName" className="text-2xl sm:text-3xl lg:text-4xl min-[1900px]:text-6xl text-white text-center !mb-16">I’m <span> Sajan Hirusha</span>

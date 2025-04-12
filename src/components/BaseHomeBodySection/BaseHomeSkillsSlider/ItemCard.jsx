@@ -1,7 +1,7 @@
 function ItemCard(props) {
     return (
         <div
-            className={`${props.class} itemCard bg-white shadow-md rounded-lg text-center relative overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 mx-2 `}
+            className={`${props.class} itemCard bg-black/20 dark:bg-white/70 shadow-md rounded-lg text-center relative overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 mx-2 `}
             style={{ width: '100vw', maxWidth: '260px' ,height:'auto'}}
         >
             <img

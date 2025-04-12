@@ -22,7 +22,7 @@ const ExtraActivities = () => {
 
             <div className="space-y-4">
                 {Details.ExtraCurricularActivities.map((item, index) => (
-                    <div key={index} className="rounded-lg overflow-hidden bg-black/70 dark:bg-black/40">
+                    <div key={index} className="rounded-lg overflow-hidden bg-[#021a2d] dark:bg-black/40">
                         <button
                             type="button"
                             className={`flex justify-between items-center w-full p-4 md:p-6 text-left transition-all duration-300 ease-in-out
@@ -46,7 +46,7 @@ const ExtraActivities = () => {
 
                         <div
                             className={`bg-fixed bg-cover bg-center bg-no-repeat 
-                                bg-[linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.88)),url('/assets/images/ActivityBg.jpg')]
+                                bg-[#021a2d] dark:bg-[linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.88)),url('/assets/images/ActivityBg.jpg')]
                                 transition-all duration-300 ease-in-out overflow-hidden
                                 ${openIndex === index ? 'max-h-[500px]' : 'max-h-0'}`}
                         >
