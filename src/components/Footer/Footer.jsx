@@ -67,7 +67,7 @@ const Footer = () => {
                             onClick={() => toggleSection(index)}
                         >
                             <div className="flex items-center justify-between">
-                                <h3 className="text-lg font-medium text-white">{section.title}</h3>
+                                <h3 className="text-lg  md:text-[#D2042D] md:underline mb-2 font-medium text-white">{section.title}</h3>
                                 {isMobile && (
                                     <svg
                                         className={`w-5 h-5 text-white transform transition-transform duration-300 ${expandedSections.includes(index) ? 'rotate-180' : ''}`}

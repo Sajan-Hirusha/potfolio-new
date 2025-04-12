@@ -4,9 +4,9 @@ import BaseHome from "./screens/BaseHome/BaseHome.jsx";
 function App() {
     return (
         <BrowserRouter basename="/potfolio-new">
-            <Routes>
-                <Route path="/" element={<BaseHome />} />
-            </Routes>
+                <Routes>
+                    <Route path="/" element={<BaseHome/>}/>
+                </Routes>
         </BrowserRouter>
     );
 }
