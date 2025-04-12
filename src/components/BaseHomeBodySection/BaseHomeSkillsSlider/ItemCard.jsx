@@ -10,7 +10,7 @@ function ItemCard(props) {
                 className={`rounded-t-lg w-[91%] h-[230px] object-cover transition-transform duration-1000 ease-in-out transform hover:scale-110 mx-auto`}
                 style={{ objectFit: 'contain' }}
             />
-            <div className="bg-black p-4 ">
+            <div className="bg-black p-4 mt-2">
                 <p className="text-white text-xs mb-4"> {props.description}</p>
             </div>
         </div>

@@ -139,7 +139,7 @@ const TopSlider = () => {
                                 ) : ("")}
                             </div>
                             <div className="sliderSectionTwo col-span-6 my-auto mx-[16%] max-[1000px]:hidden">
-                            {index === 0 ? (
+                                {index === 0 ? (
                                     <div id={`headerImageId${index}`} className="headerImage"></div>
                                 ) :index === 1 ? (
                                     <div className="alternativeHeaderImage grid grid-cols-2 gap-y-2 ">
