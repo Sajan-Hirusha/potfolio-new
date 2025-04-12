@@ -7,10 +7,22 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <script type="module" crossorigin src="/potfolio-new/assets/index-Dp2jFY1o.js"></script>
-    <link rel="stylesheet" crossorigin href="/potfolio-new/assets/index-BqMeh2Qb.css">
+    <script type="module" crossorigin src="/potfolio-new/assets/index-D3u1hpH6.js"></script>
+    <link rel="stylesheet" crossorigin href="/potfolio-new/assets/index-DnADkjsk.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
   </body>
 </html>
+
+
