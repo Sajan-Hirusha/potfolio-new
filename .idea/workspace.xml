@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="" />
+    <list default="true" id="84b4367e-60fc-4494-9245-f0c28ea511c1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,34 +13,24 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="JSX File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2rO8NbLJIWCdlJYLNQgbUph61cy" />
+  <component name="ProjectId" id="2vcSMHMxbVJEwTElmvOoYhQH3dO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Node.js.BaseHome.jsx.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/languages/Git Repos/portfolio new/potfolio-new/front-end",
-    "list.type.of.created.stylesheet": "CSS",
+    "last_opened_file_path": "F:/potfolio-new/front-end/src/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,12 +42,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets\images" />
-      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets\images" />
-      <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\src\components\BaseHomeBodySection" />
+      <recent name="F:\potfolio-new\front-end\src\assets\images" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -71,17 +56,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="" />
-      <created>1736418723712</created>
+      <changelist id="84b4367e-60fc-4494-9245-f0c28ea511c1" name="Changes" comment="" />
+      <created>1744442820219</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1736418723712</updated>
-      <workItem from="1736418724812" duration="39137000" />
-      <workItem from="1736659918160" duration="473000" />
-      <workItem from="1736692002789" duration="575000" />
-      <workItem from="1737024821574" duration="1742000" />
-      <workItem from="1737366241829" duration="266000" />
-      <workItem from="1743617473318" duration="145000" />
+      <updated>1744442820219</updated>
+      <workItem from="1744442821350" duration="3737000" />
     </task>
     <servers />
   </component>
