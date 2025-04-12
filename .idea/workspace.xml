@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeContact/BaseHomeContact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeContact/BaseHomeContact.jsx" afterDir="false" />
@@ -13,6 +14,9 @@
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/SideMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/SideMenu.jsx" afterDir="false" />
     </list>
+=======
+    <list default="true" id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
