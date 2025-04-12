@@ -92,7 +92,7 @@ const BaseHomeHeadSection = () => {
         >
             <div
                 className="col-span-12 md:col-span-11 text-white md:pl-10 md:pr-0 dark:md:pl-20 dark:md:pr-10 mx-4 md:!mx-10 dark:md:my-2">
-                <label className="absolute right-7 z-[1000] md:hidden inline-flex items-center cursor-pointer">
+                <label className="absolute right-7 z-[10] md:hidden inline-flex items-center cursor-pointer">
                     <input
                         type="checkbox"
                         id="theme-toggle"
