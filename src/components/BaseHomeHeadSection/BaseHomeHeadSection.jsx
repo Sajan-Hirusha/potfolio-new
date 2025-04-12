@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import lightMode from "../../assets/images/lightMode.png";
 import darkModeBtn from "../../assets/images/darkMode.png";
 import facebookLogo from "../../assets/images/facebook.png";
 import whatsappLogo from "../../assets/images/whatsapp.png";
@@ -34,18 +35,27 @@ const BaseHomeHeadSection = () => {
             <div
                 className="hidden md:grid homeIcon grid-cols-1 col-span-1 bg-[#141414] p-4 text-gray-900 dark:text-white pr-4 lg:pr-10 pt-20"
             >
-                {[{ icon: darkModeBtn, alt: "darkmode" }, { icon: facebookLogo, alt: "facebook" }, { icon: whatsappLogo, alt: "whatsapp" }, { icon: linkdinLogo, alt: "linkdin" }, { icon: gitLogo, alt: "github" }].map((item, index) => (
+                {[
+                    {
+                        icon: darkMode ?  lightMode:  darkModeBtn,
+                        alt: "darkmode"
+                    },
+                    { icon: facebookLogo, alt: "facebook" },
+                    { icon: whatsappLogo, alt: "whatsapp" },
+                    { icon: linkdinLogo, alt: "linkdin" },
+                    { icon: gitLogo, alt: "github" }
+                ].map((item, index) => (
                     <a href="#" key={index} className="cursor-pointer">
                         <img
                             className="w-10 h-8 lg:w-10 lg:h-10 mx-auto"
                             src={item.icon}
                             alt={item.alt}
-                            id={item.id || undefined}
                             onClick={item.alt === "darkmode" ? () => setDarkMode(prev => !prev) : undefined}
                         />
                         {index < 4 && <br />}
                     </a>
                 ))}
+
             </div>
         </div>
     );

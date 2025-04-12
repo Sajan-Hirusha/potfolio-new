@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BaseHomeHeadSection/BaseHomeHeadSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeHeadSection/BaseHomeHeadSection.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/potfolio-new/front-end",
+    "last_opened_file_path": "F:/newClone/potfolio-new/src/assets/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,6 +56,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\newClone\potfolio-new\src\assets\images" />
       <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets\images" />
       <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets" />
     </key>
@@ -189,6 +187,7 @@
       <workItem from="1737366241829" duration="266000" />
       <workItem from="1743617473318" duration="145000" />
       <workItem from="1744451416579" duration="34000" />
+      <workItem from="1744451740788" duration="1661000" />
     </task>
     <servers />
   </component>
