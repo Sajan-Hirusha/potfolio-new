@@ -19,6 +19,33 @@ const BaseHomeHeadSection = () => {
     });
 
     useEffect(() => {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (!themeToggle) return; // Early return if element not found
+
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggle.checked = true;
+        }
+
+        themeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        return () => {
+            themeToggle.removeEventListener('change'); // Cleanup
+        };
+    }, []);
+
+    useEffect(() => {
         const html = document.documentElement;
         if (darkMode) {
             html.classList.add("dark");
@@ -28,26 +55,26 @@ const BaseHomeHeadSection = () => {
             localStorage.setItem("theme", "light");
         }
     }, [darkMode]);
-    const DarkModeIcons =[
+    const DarkModeIcons = [
         {
-            icon: darkMode ?  lightMode:  darkModeBtn,
+            icon: darkMode ? lightMode : darkModeBtn,
             alt: "darkmode"
         },
-        { icon: facebookLogo, alt: "facebook" },
-        { icon: whatsappLogo, alt: "whatsapp" },
-        { icon: linkdinLogo, alt: "linkdin" },
-        { icon: gitLogo, alt: "github" }
+        {icon: facebookLogo, alt: "facebook"},
+        {icon: whatsappLogo, alt: "whatsapp"},
+        {icon: linkdinLogo, alt: "linkdin"},
+        {icon: gitLogo, alt: "github"}
     ]
 
     const lightModeIcons = [
         {
-            icon: darkMode ?  lightMode:  darkModeBtn,
+            icon: darkMode ? lightMode : darkModeBtn,
             alt: "darkmode"
         },
-        { icon: lightModeFacebook, alt: "facebook" },
-        { icon: lightModeWhatsapp, alt: "whatsapp" },
-        { icon: lightModeLinkdinLogo, alt: "linkdin" },
-        { icon: lightModeGitHub, alt: "github" }
+        {icon: lightModeFacebook, alt: "facebook"},
+        {icon: lightModeWhatsapp, alt: "whatsapp"},
+        {icon: lightModeLinkdinLogo, alt: "linkdin"},
+        {icon: lightModeGitHub, alt: "github"}
     ]
 
     const [isDarkMode, setIsDarkMode] = useState(() =>
@@ -75,17 +102,27 @@ const BaseHomeHeadSection = () => {
     }, []);
 
     useEffect(() => {
-        currentImagesRef.current = isDarkMode ? DarkModeIcons: lightModeIcons;
+        currentImagesRef.current = isDarkMode ? DarkModeIcons : lightModeIcons;
     }, [isDarkMode]);
 
-    const currentIcons = isDarkMode ? DarkModeIcons :lightModeIcons;
+    const currentIcons = isDarkMode ? DarkModeIcons : lightModeIcons;
     return (
         <div
             id="Home"
             className="BaseHomeHeadSection grid grid-cols-12 gap-2 mt-8"
         >
-            <div className="col-span-12 md:col-span-11 text-white md:pl-10 md:pr-0 dark:md:pl-20 dark:md:pr-10 mx-4 md:!mx-10 dark:md:my-2">
-                <TopSlider />
+            <div
+                className="col-span-12 md:col-span-11 text-white md:pl-10 md:pr-0 dark:md:pl-20 dark:md:pr-10 mx-4 md:!mx-10 dark:md:my-2">
+                <label className="relative mb-4 md:hidden left-[82%] inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="theme-toggle" className="sr-only peer"/>
+                    <div
+                        className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                    <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        <span className="dark:hidden">Light</span>
+                        <span className="hidden dark:inline">Dark</span>
+                    </span>
+                </label>
+                <TopSlider/>
             </div>
 
             <div
@@ -99,7 +136,7 @@ const BaseHomeHeadSection = () => {
                             alt={item.alt}
                             onClick={item.alt === "darkmode" ? () => setDarkMode(prev => !prev) : undefined}
                         />
-                        {index < 4 && <br />}
+                        {index < 4 && <br/>}
                     </a>
                 ))}
 
