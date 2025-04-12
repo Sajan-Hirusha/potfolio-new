@@ -2,6 +2,9 @@ import {useState, useEffect, useRef} from "react";
 import slider01 from '../../assets/images/slider01.jpg';
 import slider02 from '../../assets/images/slider02.jpg';
 import slider03 from '../../assets/images/slider03.jpg';
+import lightModeSlider01 from '../../assets/images/lightModeBanner01.jpg';
+import lightModeSlider02 from '../../assets/images/lightModeBanner02.jpg';
+import lightModeSlider03 from '../../assets/images/lightModeBanner03.jpeg';
 import skillsImage01 from '../../assets/images/reactHeader.png';
 import skillsImage02 from '../../assets/images/nodeHeader.png';
 import skillsImage03 from '../../assets/images/mongoDBHeader.png';
@@ -15,6 +18,7 @@ import './TopSlider.css';
 import Typed from "typed.js";
 
 const images = [slider01, slider02, slider03];
+const lightModeImages = [lightModeSlider01, lightModeSlider02, lightModeSlider03];
 const skillsImages = [skillsImage01,skillsImage02,skillsImage03,skillsImage04];
 const projectsImages = [projectImage01,projectImage02,projectImage03,projectImage04];
 
@@ -22,8 +26,34 @@ const TopSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isSliding, setIsSliding] = useState(false);
     const intervalRef = useRef(null);
-
     const textRefs = [useRef(null), useRef(null), useRef(null)]; // Initialize an array of refs
+    const [isDarkMode, setIsDarkMode] = useState(() =>
+        document.documentElement.classList.contains('dark')
+    );
+    const currentImagesRef = useRef(isDarkMode ? images : lightModeImages);
+
+    // Dark mode detection
+    useEffect(() => {
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.attributeName === 'class') {
+                    const darkMode = document.documentElement.classList.contains('dark');
+                    setIsDarkMode(darkMode);
+                }
+            });
+        });
+
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        currentImagesRef.current = isDarkMode ? images : lightModeImages;
+    }, [isDarkMode]);
 
     // Reset sliding flag after a transition
     useEffect(() => {
@@ -54,7 +84,7 @@ const TopSlider = () => {
         if (isSliding) return;
         setIsSliding(true);
         setCurrentSlide((prev) => (prev + 1) % images.length);
-        startAutoSlide(); // Restart the auto-slide interval
+        startAutoSlide();
     };
 
     // Change to the previous slide
@@ -65,7 +95,6 @@ const TopSlider = () => {
         startAutoSlide();
     };
 
-    // Typed.js initialization for each textRef
     useEffect(() => {
         const options = {
             typeSpeed: 70,
@@ -87,16 +116,16 @@ const TopSlider = () => {
             return new Typed(ref.current, optionsWithStrings);
         });
 
-        // Cleanup typed instances when the component unmounts
         return () => {
             typedInstances.forEach(typedInstance => typedInstance.destroy());
         };
     }, []);
 
+    const currentImages = isDarkMode ? images : lightModeImages;
     return (
         <div className="top-slider h-[61vh]  sm:h-[55vh] md:h-[58vh] min-[1000px]:h-[71vh] min-[1200px]:h-[80vh] overflow-hidden relative rounded-3xl">
             <div className="relative w-full ">
-                {images.map((src, index) => (
+                {currentImages.map((src, index) => (
                     <div
                         key={index}
                         className={`slide w-full  h-[71vh] min-[1200px]:h-[80vh] absolute transition-all duration-[3s] ease-in-out ${

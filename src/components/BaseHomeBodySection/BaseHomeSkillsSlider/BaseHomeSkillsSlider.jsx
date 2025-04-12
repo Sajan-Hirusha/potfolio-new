@@ -77,7 +77,7 @@ const BaseHomeSkillsSlider =()=>{
 
     return (
         <div id="Skills" className="relative w-[91%] mx-auto ">
-            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !my-20">My Skills</h1>
+            <h1 className="text-center text-black dark:text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !my-20">My Skills</h1>
             <div className="overflow-hidden rounded-lg">
                 <div
                     className="flex"

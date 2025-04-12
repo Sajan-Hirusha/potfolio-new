@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <div className="Header mb-32">
-            <header className="fixed top-0 left-0 right-0 bg-black border-b border-gray-700 z-50">
+            <header className="fixed top-0 left-0 right-0 bg-[#021a2d] dark:bg-black border-b border-gray-700 z-50">
                 <div className=" mx-auto max-w-full sm:px-6 lg:px-20 py-2">
                     <nav className="flex items-center justify-between h-16 lg:h-20">
                         {/* Hamburger Button */}

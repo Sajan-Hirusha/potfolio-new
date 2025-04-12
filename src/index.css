@@ -7,6 +7,7 @@
 h1{
     font-family: 'Times New Roman', Times, serif !important;
 }
-body{
-    background-color: #141414;
+body {
+    @apply text-black bg-[#e1ebf2] dark:bg-[#141414] dark:text-white;
+    font-family: 'Times New Roman', Times, serif;
 }

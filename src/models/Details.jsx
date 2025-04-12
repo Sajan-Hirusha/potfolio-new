@@ -2,6 +2,10 @@ import tailwindConfig from "../assets/images/tailwindCsssHeader.png"
 import mysql from "../assets/images/mySql.png"
 import java from "../assets/images/java.png"
 import node from "../assets/images/nodeHeader.png"
+import project1 from "../assets/images/project02.png"
+import project2 from "../assets/images/project01.png"
+import project3 from "../assets/images/project03.png"
+import project4 from "../assets/images/project04.png"
 
 const Details = {
     name: 'Sabari Holdings',
@@ -83,37 +87,37 @@ const Details = {
         {
             projectName: 'project1',
             coverImageLinks: [
-                tailwindConfig,
-                mysql,
-                java,
-                node,
+                project1,
+                project2,
+                project3,
+                project4,
             ],
             tags: ['Industry', 'Grouped', 'individulas'],
         }, {
             projectName: 'project1',
             coverImageLinks: [
-                tailwindConfig,
-                mysql,
-                java,
-                node,
+                project1,
+                project2,
+                project3,
+                project4,
             ],
             tags: ['Industry', 'Grouped'],
         }, {
             projectName: 'project2',
             coverImageLinks: [
-                tailwindConfig,
-                mysql,
-                java,
-                node,
+                project1,
+                project2,
+                project3,
+                project4,
             ],
             tags: ['Industry', 'Grouped'],
         }, {
             projectName: 'project3',
             coverImageLinks: [
-                tailwindConfig,
-                mysql,
-                java,
-                node,
+                project1,
+                project2,
+                project3,
+                project4,
             ],
             tags: ['Industry', 'Grouped'],
         }

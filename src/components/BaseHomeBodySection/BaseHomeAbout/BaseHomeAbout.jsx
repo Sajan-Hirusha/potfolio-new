@@ -9,7 +9,7 @@ function BaseHomeAbout(props) {
             className={`baseHomeAbout mx-4 sm:mx-10 mt-20 ${props.className || ''}`}
         >
 
-            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !mt-10 mb-10 ">About
+            <h1 className="text-center text-black dark:text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !mt-10 mb-10 ">About
                 Me</h1>
             <div className="grid grid-cols-1 md:grid-cols-12 aboutBackground py-16">
                 <div className="col-span-1 md:col-span-7 about-me-leftSection">

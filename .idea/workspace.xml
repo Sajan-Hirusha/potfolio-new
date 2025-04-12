@@ -5,27 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04a33571-9274-416a-9d9d-00ee6cee912d" name="Changes" comment="">
-<<<<<<< Updated upstream
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/darkMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/github.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/github.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/lightMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/linkdin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/linkdin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/whatsapp.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/whatsapp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeContact/BaseHomeContact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeContact/BaseHomeContact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeEducation/BaseHomeEducation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeEducation/BaseHomeEducation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeSkillsSlider/ItemCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeBodySection/BaseHomeSkillsSlider/ItemCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BaseHomeHeadSection/BaseHomeHeadSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeHeadSection/BaseHomeHeadSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BaseHomeSlider/TopSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHomeSlider/TopSlider.jsx" afterDir="false" />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/potfolio-new/front-end",
+    "last_opened_file_path": "F:/newClone/potfolio-new/src/assets/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,10 +70,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\newClone\potfolio-new\src\assets\images" />
       <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets\images" />
       <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\newClone\potfolio-new\src\assets\images" />
+      <recent name="F:\newClone\potfolio-new\src\assets" />
+      <recent name="F:\newClone\potfolio-new\src\assets\icons" />
       <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\public\assets\images" />
       <recent name="F:\languages\Git Repos\portfolio new\potfolio-new\front-end\src\components\BaseHomeBodySection" />
     </key>
@@ -204,22 +204,8 @@
       <workItem from="1737366241829" duration="266000" />
       <workItem from="1743617473318" duration="145000" />
       <workItem from="1744451416579" duration="34000" />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-      <workItem from="1744451740788" duration="11059000" />
->>>>>>> Stashed changes
-=======
-      <workItem from="1744451740788" duration="11059000" />
->>>>>>> Stashed changes
-=======
-      <workItem from="1744451740788" duration="11059000" />
->>>>>>> Stashed changes
-=======
-      <workItem from="1744451740788" duration="11059000" />
->>>>>>> Stashed changes
+      <workItem from="1744451740788" duration="7404000" />
+      <workItem from="1744481064440" duration="5149000" />
     </task>
     <servers />
   </component>

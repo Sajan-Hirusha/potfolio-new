@@ -3,9 +3,9 @@ import './BaseHomeContact.css'
 const BaseHomeContact = () => {
     return (
         <div id="ContactUs">
-            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold mb-16">Contact Me</h1>
+            <h1 className="text-center text-black dark:text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold mb-16">Contact Me</h1>
             <div className="baseHome-contact grid grid-cols-12 gap-8 mb-20">
-                <div className="col-span-12 lg:col-span-5 contact-left bg-[#191b1e] rounded-xl p-5 max-sm:mx-4 xl:p-10 max-lg:mx-10 lg:ml-10 ">
+                <div className="col-span-12 lg:col-span-5 contact-left bg-[#021a2d] dark:bg-[#191b1e] rounded-xl p-5 max-sm:mx-4 xl:p-10 max-lg:mx-10 lg:ml-10 ">
                     <h1 id="myName" className="text-2xl sm:text-3xl lg:text-4xl min-[1900px]:text-6xl text-white text-center !mb-16">I’m <span> Sajan Hirusha</span>
                     </h1>
                     <p className="contact-text  text-white text-justify !mb-8">Phone : 0702789166
@@ -42,7 +42,7 @@ const BaseHomeContact = () => {
                     </div>
 
                 </div>
-                <div className="col-span-12 lg:col-span-7 contact-right bg-[#191b1e] rounded-xl max-sm:mx-4 max-lg:mx-10 lg:mr-10">
+                <div className="col-span-12 lg:col-span-7 contact-right bg-[#021a2d] dark:bg-[#191b1e] rounded-xl max-sm:mx-4 max-lg:mx-10 lg:mr-10">
                     <p className="text-[13px] sm:text-base md:text-md min-[1900px]:text-xl !mt-8 text-center text-[#D2042D]">Let’s Connect and Create Something
                         Extraordinary Together!</p>
                     <form action="" className="space-y-4 p-10 !my-4">
@@ -113,7 +113,7 @@ const BaseHomeContact = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="contactSubmit w-full border-[#252d32] rounded-md bg-[#232a2f] p-4  text-white shadow-sm hover:bg-gray-700 mt-8"
+                                className="contactSubmit w-full bg-gradient-to-b from-blue-900 to-[#021a2d] dark:border-[#252d32] rounded-md bg-[#232a2f] p-4  text-white shadow-sm hover:bg-gray-700 mt-8"
                             >
                                 SEND MESSAGE
                             </button>
