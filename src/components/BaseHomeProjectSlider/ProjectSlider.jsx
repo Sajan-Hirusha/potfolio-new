@@ -89,7 +89,7 @@ function ProjectSlider() {
 
     return (
         <div id="Projects" className="ProectSlider relative w-[91%] mx-auto px-4 sm:px-20 pb-10 lg:px-0 ">
-            <h1 className="text-center text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold sm:!my-20">My Projects</h1>
+            <h1 className="text-center text-black dark:text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold sm:!mt-20 mb-5">My Projects</h1>
             <div className="overflow-hidden rounded-lg">
                 <div
                     className="flex"

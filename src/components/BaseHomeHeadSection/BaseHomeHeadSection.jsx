@@ -26,14 +26,14 @@ const BaseHomeHeadSection = () => {
     return (
         <div
             id="Home"
-            className="BaseHomeHeadSection grid grid-cols-12 gap-2 bg-white dark:bg-[#141414] mt-8"
+            className="BaseHomeHeadSection grid grid-cols-12 gap-2 mt-8"
         >
             <div className="col-span-12 md:col-span-11 text-white md:pl-20 md:pr-10 mx-4 md:!mx-10 md:my-2">
                 <TopSlider />
             </div>
 
             <div
-                className="hidden md:grid homeIcon grid-cols-1 col-span-1 bg-[#141414] p-4 text-gray-900 dark:text-white pr-4 lg:pr-10 pt-20"
+                className="hidden md:grid homeIcon grid-cols-1 col-span-1 p-4 text-gray-900 dark:text-white pr-4 lg:pr-10 pt-20"
             >
                 {[
                     {

@@ -16,13 +16,13 @@ const ExtraActivities = () => {
 
     return (
         <div id="ExtraActivities" className="w-full px-4 sm:px-6 md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 mx-auto py-10">
-            <h1 className="text-center text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold my-10 md:my-16 lg:my-20">
+            <h1 className="text-center text-black dark:text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold my-10 md:my-16 lg:my-20">
                 Extra Curricular Activities
             </h1>
 
             <div className="space-y-4">
                 {Details.ExtraCurricularActivities.map((item, index) => (
-                    <div key={index} className="rounded-lg overflow-hidden">
+                    <div key={index} className="rounded-lg overflow-hidden bg-black/70 dark:bg-black/40">
                         <button
                             type="button"
                             className={`flex justify-between items-center w-full p-4 md:p-6 text-left transition-all duration-300 ease-in-out
@@ -31,7 +31,7 @@ const ExtraActivities = () => {
                             onClick={() => toggleAccordion(index)}
                             aria-expanded={openIndex === index}
                         >
-                            <span className="text-lg md:text-xl lg:text-xl font-medium">{item.title}</span>
+                            <span className=" text-lg md:text-xl lg:text-xl font-medium">{item.title}</span>
                             <svg
                                 className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-300
                                     ${openIndex === index ? 'text-black rotate-180' : 'text-white'}`}
