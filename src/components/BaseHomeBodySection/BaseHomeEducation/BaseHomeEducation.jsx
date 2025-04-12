@@ -4,7 +4,7 @@ function BaseHomeEducation() {
     return (
         <div
             id="Education"
-            className="BaseHomeEducation bg-[#eeeff1] text-black dark:text-white dark:bg-[#141414] py-12 px-6 md:px-12 lg:px-24"
+            className="BaseHomeEducation text-black dark:text-white py-12 px-6 md:px-12 lg:px-24"
         >
             <h2 className="text-4xl font-bold mb-12 text-center relative">
                 <h1 className="text-center text-black dark:text-white text-4xl md:text-5xl min-[1900px]:text-6xl font-bold !mt-20 mb-10">

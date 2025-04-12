@@ -56,9 +56,9 @@ const Footer = () => {
     ];
 
     return (
-        <div className="py-10 bg-black sm:pt-16 lg:pt-24">
+        <div
+            className="footer py-10 bg-gradient-to-b from-[#021a2d] via-[#021a2d] to-gray-950 sm:pt-16 lg:pt-24">
             <div className="px-4 mx-auto sm:px-6 lg:px-40 max-w-full">
-                {/* Box-style sections */}
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-6">
                     {sections.map((section, index) => (
                         <div
@@ -75,12 +75,14 @@ const Footer = () => {
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
                                     >
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                              d="M19 9l-7 7-7-7"/>
                                     </svg>
                                 )}
                             </div>
 
-                            <div className={`${isMobile ? (expandedSections.includes(index) ? 'max-h-96 mt-4' : 'max-h-0') : 'max-h-96'} overflow-hidden transition-all duration-300`}>
+                            <div
+                                className={`${isMobile ? (expandedSections.includes(index) ? 'max-h-96 mt-4' : 'max-h-0') : 'max-h-96'} overflow-hidden transition-all duration-300`}>
                                 <ul className="space-y-3">
                                     {section.links.map((link, i) => (
                                         <li key={i}>
@@ -98,9 +100,10 @@ const Footer = () => {
                     ))}
                 </div>
 
-                <hr className="mt-16 mb-10 border-gray-800" />
+                <hr className="mt-16 mb-10 border-gray-800"/>
 
-                <div className="flex flex-col items-center justify-between px-2 space-y-6 sm:space-y-0 sm:flex-row sm:px-5">
+                <div
+                    className="flex flex-col items-center justify-between px-2 space-y-6 sm:space-y-0 sm:flex-row sm:px-5">
                     <p className="text-white text-center sm:text-left">&copy; Developed by Sajan Hirusha</p>
                     <ul className="flex items-center space-x-3">
                         {socialIcons.map((social, index) => (

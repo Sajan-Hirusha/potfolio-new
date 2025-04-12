@@ -8,6 +8,6 @@ h1{
     font-family: 'Times New Roman', Times, serif !important;
 }
 body {
-    @apply text-black bg-[#eeeff1] dark:bg-[#141414] dark:text-white;
+    @apply text-black bg-[#e1ebf2] dark:bg-[#141414] dark:text-white;
     font-family: 'Times New Roman', Times, serif;
 }
