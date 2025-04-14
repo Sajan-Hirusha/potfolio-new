@@ -116,6 +116,7 @@ function ProjectSlider() {
                                 description={item.description}
                                 githubUrl={item.githubUrl}
                                 link={item.link}
+                                technologies={item.technologies}
                             />
                         </div>
                     ))}

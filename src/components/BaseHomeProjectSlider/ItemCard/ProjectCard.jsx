@@ -15,7 +15,6 @@ function ProjectCard(props) {
             (prevIndex) => (prevIndex - 1 + props.coverImageLinks.length) % props.coverImageLinks.length
         );
     };
-
     return (
         <div
             className={`bg-white/70 dark:bg-white/70 itemCard shadow-md rounded-lg text-center relative mx-auto overflow-hidden w-[260px] h-[280px] sm:w-[260px] lg:w-[220px] min-[1200px]:w-[260px] lg:h-[260px] min-[1200px]:h-[280px]`}
@@ -31,7 +30,8 @@ function ProjectCard(props) {
                         tags: props.tags,
                         images: props.coverImageLinks,
                         githubUrl: props.githubUrl,
-                        liveUrl: props.link
+                        liveUrl: props.link,
+                        technologies:props.technologies
                     }
                 }}
             >
@@ -127,4 +127,5 @@ ProjectCard.propTypes = {
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     githubUrl: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

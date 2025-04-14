@@ -158,6 +158,7 @@ const Details = {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
                 "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
+            technologies:['React','node','mongoDB'],
             githubUrl: "https://github.com/sachinduKavi/MasImplex-frontend",
             link: "https://masimpex.lk/"
         }, {
@@ -171,6 +172,7 @@ const Details = {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
                 "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
+            technologies:['React','node','mongoDB'],
             githubUrl: "https://github.com/sachinduKavi/Mas-Imepx-Official",
             link: "https://www.sabariholdings.com/"
         }, {
@@ -184,6 +186,7 @@ const Details = {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
                 "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
+            technologies:['React','node','mongoDB'],
             githubUrl: "https://github.com/Sajan-Hirusha/GCapital",
             link: "https://www.gcapitaltrading.com/"
         }, {
@@ -197,6 +200,7 @@ const Details = {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
                 "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
+            technologies:['React','node','mongoDB'],
             githubUrl: "https://github.com/Sajan-Hirusha/GCapital",
             link: "https://www.gcapitaltrading.com/"
         },
