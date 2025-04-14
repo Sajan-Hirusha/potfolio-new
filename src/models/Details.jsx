@@ -27,6 +27,7 @@ import slider03 from '../assets/images/slider03.jpg';
 import lightModeSlider01 from '../assets/images/lightModeBanner01.jpg';
 import lightModeSlider02 from '../assets/images/lightModeBanner02.jpg';
 import lightModeSlider03 from '../assets/images/lightModeBanner03.jpeg';
+
 const Details = {
     name: 'Sabari Holdings',
     email: 'info@sabariholdings.com',
@@ -41,9 +42,9 @@ const Details = {
     ],
 
     lightModeSliderImages: [
-       lightModeSlider01,
-       lightModeSlider02,
-       lightModeSlider03,
+        lightModeSlider01,
+        lightModeSlider02,
+        lightModeSlider03,
     ],
     skillsImages: [
         java,
@@ -138,7 +139,7 @@ const Details = {
             coverImageLink: tailwindConfig,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }, {
-            coverImageLink:mysql,
+            coverImageLink: mysql,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }, {
             coverImageLink: mongoDb,
@@ -154,8 +155,12 @@ const Details = {
                 sabariHoldingsProject3,
                 sabariHoldingsProject4,
             ],
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
+                "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
-        },{
+            githubUrl: "https://github.com/sachinduKavi/MasImplex-frontend",
+            link: "https://masimpex.lk/"
+        }, {
             projectName: 'MAS IMPEX PVT LTD Website ',
             coverImageLinks: [
                 masImpexProjectImg1,
@@ -163,7 +168,11 @@ const Details = {
                 masImpexProjectImg3,
                 masImpexProjectImg4,
             ],
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
+                "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
+            githubUrl: "https://github.com/sachinduKavi/Mas-Imepx-Official",
+            link: "https://www.sabariholdings.com/"
         }, {
             projectName: 'G CAPITAL TRADING Dubai Company Website',
             coverImageLinks: [
@@ -172,7 +181,11 @@ const Details = {
                 gCapitalProjectImg3,
                 gCapitalProjectImg4,
             ],
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
+                "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
+            githubUrl: "https://github.com/Sajan-Hirusha/GCapital",
+            link: "https://www.gcapitaltrading.com/"
         }, {
             projectName: 'G CAPITAL TRADING Dubai Company Website',
             coverImageLinks: [
@@ -181,7 +194,11 @@ const Details = {
                 gCapitalProjectImg3,
                 gCapitalProjectImg4,
             ],
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut " +
+                "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
             tags: ['Industry Project', 'Grouped Project',],
+            githubUrl: "https://github.com/Sajan-Hirusha/GCapital",
+            link: "https://www.gcapitaltrading.com/"
         },
     ],
     educationDetails: [

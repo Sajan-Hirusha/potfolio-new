@@ -107,11 +107,15 @@ function ProjectSlider() {
                         >
                             <ProjectCard
                                 imageUrl={item.coverImageLinks?.[0]}
-                                imageUrls={item.coverImageLinks}
+                                coverImageLinks={item.coverImageLinks}
                                 class={"bg-gray-50 p-1"}
                                 className={classname}
                                 category={item.tags}
-                                itemName={item.projectName}
+                                projectName={item.projectName}
+                                tags={item.tags}
+                                description={item.description}
+                                githubUrl={item.githubUrl}
+                                link={item.link}
                             />
                         </div>
                     ))}
