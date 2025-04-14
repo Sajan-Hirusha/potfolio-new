@@ -74,7 +74,7 @@ function ProjectCard(props) {
                         </span>
                     ))}
                 </div>
-                <h3 className="text-sm font-semibold  mb-4 text-white">
+                <h3 className="text-xs font-semibold  mb-4 text-white mt-2">
                     {props.itemName}
                 </h3>
             </div>
