@@ -21,20 +21,7 @@ function ProjectCard(props) {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <Link
-                to="/projectDetails"
-                state={{
-                    project: {
-                        title: props.projectName,
-                        description: props.description,
-                        tags: props.tags,
-                        images: props.coverImageLinks,
-                        githubUrl: props.githubUrl,
-                        liveUrl: props.link,
-                        technologies:props.technologies
-                    }
-                }}
-            >
+
                 {isHovered && props.coverImageLinks.length > 1 ? (
                     <div className="relative overflow-hidden rounded-lg h-full">
                         <div
@@ -43,11 +30,26 @@ function ProjectCard(props) {
                         >
                             {props.coverImageLinks.map((image, index) => (
                                 <div className="w-full flex-shrink-0 h-full" key={index}>
+                                    <Link
+                                        to="/projectDetails"
+                                        state={{
+                                            project: {
+                                                title: props.projectName,
+                                                description: props.description,
+                                                tags: props.tags,
+                                                images: props.coverImageLinks,
+                                                githubUrl: props.githubUrl,
+                                                liveUrl: props.link,
+                                                technologies:props.technologies
+                                            }
+                                        }}
+                                    >
                                     <img
                                         className={`${props.className} rounded-t-lg object-cover w-full h-full`}
                                         src={image}
                                         alt={`Slide ${index + 1}`}
                                     />
+                                    </Link>
                                 </div>
                             ))}
                         </div>
@@ -73,11 +75,26 @@ function ProjectCard(props) {
                         </button>
                     </div>
                 ) : (
+                    <Link
+                        to="/projectDetails"
+                        state={{
+                            project: {
+                                title: props.projectName,
+                                description: props.description,
+                                tags: props.tags,
+                                images: props.coverImageLinks,
+                                githubUrl: props.githubUrl,
+                                liveUrl: props.link,
+                                technologies:props.technologies
+                            }
+                        }}
+                    >
                     <img
                         src={props.coverImageLinks[0]}
                         alt="Project cover"
                         className={`${props.className} w-full h-[200px] lg:h-[182px] min-[1200px]:h-[200px] overflow-hidden rounded-t-lg object-cover`}
                     />
+                    </Link>
                 )}
 
                 <div className="m-auto my-4 bg-black p-4">
@@ -99,7 +116,7 @@ function ProjectCard(props) {
                         {props.projectName}
                     </h3>
                 </div>
-            </Link>
+
         </div>
     );
 }
