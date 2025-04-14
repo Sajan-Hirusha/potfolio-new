@@ -2,11 +2,31 @@ import tailwindConfig from "../assets/images/tailwindCsssHeader.png"
 import mysql from "../assets/images/mySql.png"
 import java from "../assets/images/java.png"
 import node from "../assets/images/nodeHeader.png"
-import project1 from "../assets/images/project02.png"
-import project2 from "../assets/images/project01.png"
-import project3 from "../assets/images/project03.png"
-import project4 from "../assets/images/project04.png"
-
+import react from "../assets/images/react.png"
+import springboot from "../assets/images/springboot.png"
+import mongoDb from "../assets/images/mongoDB.png"
+import php from "../assets/images/php.png"
+import python from "../assets/images/python.png"
+import django from "../assets/images/django.png"
+import mern from "../assets/images/mern.png"
+import masImpexProjectImg1 from "../assets/images/masImpexProjectImg1.png"
+import masImpexProjectImg2 from "../assets/images/masImpexProjectImg1.png"
+import masImpexProjectImg3 from "../assets/images/masImpexProjectImg3.png"
+import masImpexProjectImg4 from "../assets/images/masImpexProjectImg4.png"
+import gCapitalProjectImg1 from "../assets/images/gCapitalProjectImg1.png"
+import gCapitalProjectImg2 from "../assets/images/gCapitalProjectImg2.png"
+import gCapitalProjectImg3 from "../assets/images/gCapitalProjectImg3.png"
+import gCapitalProjectImg4 from "../assets/images/gCapitalProjectImg4.png"
+import sabariHoldingsProject1 from "../assets/images/sabariHoldingsProject1.png"
+import sabariHoldingsProject2 from "../assets/images/sabariHoldingsProject1.png"
+import sabariHoldingsProject3 from "../assets/images/sabariHoldingsProject1.png"
+import sabariHoldingsProject4 from "../assets/images/sabariHoldingsProject1.png"
+import slider01 from '../assets/images/slider01.jpg';
+import slider02 from '../assets/images/slider02.jpg';
+import slider03 from '../assets/images/slider03.jpg';
+import lightModeSlider01 from '../assets/images/lightModeBanner01.jpg';
+import lightModeSlider02 from '../assets/images/lightModeBanner02.jpg';
+import lightModeSlider03 from '../assets/images/lightModeBanner03.jpeg';
 const Details = {
     name: 'Sabari Holdings',
     email: 'info@sabariholdings.com',
@@ -14,6 +34,29 @@ const Details = {
     social: {
         faceBook: 'https://www.facebook.com/masimpex1?mibextid=ZbWKwL'
     },
+    darkModeSliderImages: [
+        slider01,
+        slider02,
+        slider03,
+    ],
+
+    lightModeSliderImages: [
+       lightModeSlider01,
+       lightModeSlider02,
+       lightModeSlider03,
+    ],
+    skillsImages: [
+        java,
+        node,
+        react,
+        springboot,
+    ],
+    projectsImages: [
+        sabariHoldingsProject1,
+        masImpexProjectImg1,
+        gCapitalProjectImg2,
+        sabariHoldingsProject2,
+    ],
     sliderTopicsPart1: [
         "Hi, I’m ",
         "Discover ",
@@ -63,17 +106,11 @@ const Details = {
             title: "Visit My Portfolio And Hire Me",
             para: "Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and developer with 2 years " +
                 "of experience. My main target is to provide a good service to my buyers. Please message me with your requests.",
-
         }
-
-
     ],
     skills: [
         {
-            coverImageLink: tailwindConfig,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        }, {
-            coverImageLink: mysql,
+            coverImageLink: mern,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }, {
             coverImageLink: java,
@@ -81,46 +118,71 @@ const Details = {
         }, {
             coverImageLink: node,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        }, {
+            coverImageLink: python,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        }, {
+            coverImageLink: php,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        }, {
+            coverImageLink: react,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        },
+        {
+            coverImageLink: springboot,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        }, {
+            coverImageLink: django,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        }, {
+            coverImageLink: tailwindConfig,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        }, {
+            coverImageLink:mysql,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        }, {
+            coverImageLink: mongoDb,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
         }
     ],
     projects: [
         {
-            projectName: 'project1',
+            projectName: 'Sabari Holdings Webiste',
             coverImageLinks: [
-                project1,
-                project2,
-                project3,
-                project4,
+                sabariHoldingsProject1,
+                sabariHoldingsProject2,
+                sabariHoldingsProject3,
+                sabariHoldingsProject4,
             ],
-            tags: ['Industry', 'Grouped', 'individulas'],
+            tags: ['Industry Project', 'Grouped Project',],
+        },{
+            projectName: 'MAS IMPEX PVT LTD Website ',
+            coverImageLinks: [
+                masImpexProjectImg1,
+                masImpexProjectImg2,
+                masImpexProjectImg3,
+                masImpexProjectImg4,
+            ],
+            tags: ['Industry Project', 'Grouped Project',],
         }, {
-            projectName: 'project1',
+            projectName: 'G CAPITAL TRADING Dubai Company Website',
             coverImageLinks: [
-                project1,
-                project2,
-                project3,
-                project4,
+                gCapitalProjectImg1,
+                gCapitalProjectImg2,
+                gCapitalProjectImg3,
+                gCapitalProjectImg4,
             ],
-            tags: ['Industry', 'Grouped'],
+            tags: ['Industry Project', 'Grouped Project',],
         }, {
-            projectName: 'project2',
+            projectName: 'G CAPITAL TRADING Dubai Company Website',
             coverImageLinks: [
-                project1,
-                project2,
-                project3,
-                project4,
+                gCapitalProjectImg1,
+                gCapitalProjectImg2,
+                gCapitalProjectImg3,
+                gCapitalProjectImg4,
             ],
-            tags: ['Industry', 'Grouped'],
-        }, {
-            projectName: 'project3',
-            coverImageLinks: [
-                project1,
-                project2,
-                project3,
-                project4,
-            ],
-            tags: ['Industry', 'Grouped'],
-        }
+            tags: ['Industry Project', 'Grouped Project',],
+        },
     ],
     educationDetails: [
         {

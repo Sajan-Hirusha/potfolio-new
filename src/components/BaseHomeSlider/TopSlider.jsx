@@ -1,26 +1,12 @@
 import {useState, useEffect, useRef} from "react";
-import slider01 from '../../assets/images/slider01.jpg';
-import slider02 from '../../assets/images/slider02.jpg';
-import slider03 from '../../assets/images/slider03.jpg';
-import lightModeSlider01 from '../../assets/images/lightModeBanner01.jpg';
-import lightModeSlider02 from '../../assets/images/lightModeBanner02.jpg';
-import lightModeSlider03 from '../../assets/images/lightModeBanner03.jpeg';
-import skillsImage01 from '../../assets/images/reactHeader.png';
-import skillsImage02 from '../../assets/images/nodeHeader.png';
-import skillsImage03 from '../../assets/images/mongoDBHeader.png';
-import skillsImage04 from '../../assets/images/tailwindCsssHeader.png';
-import projectImage01 from '../../assets/images/project01.png';
-import projectImage02 from '../../assets/images/project02.png';
-import projectImage03 from '../../assets/images/project03.png';
-import projectImage04 from '../../assets/images/project04.png';
 import Details from '../../models/Details.jsx';
 import './TopSlider.css';
 import Typed from "typed.js";
 
-const images = [slider01, slider02, slider03];
-const lightModeImages = [lightModeSlider01, lightModeSlider02, lightModeSlider03];
-const skillsImages = [skillsImage01,skillsImage02,skillsImage03,skillsImage04];
-const projectsImages = [projectImage01,projectImage02,projectImage03,projectImage04];
+const images = Details.darkModeSliderImages;
+const lightModeImages = Details.lightModeSliderImages;
+const skillsImages = Details.skillsImages;
+const projectsImages = Details.projectsImages;
 
 const TopSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
